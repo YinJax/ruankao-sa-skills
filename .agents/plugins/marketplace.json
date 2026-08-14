@@ -1,0 +1,20 @@
+{
+  "name": "rk",
+  "interface": {
+    "displayName": "RK Coach"
+  },
+  "plugins": [
+    {
+      "name": "rk",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rk"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

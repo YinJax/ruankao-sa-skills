@@ -1,0 +1,12 @@
+{
+  "name": "rk",
+  "description": "软考系统架构设计师基础知识、案例分析和论文训练 Skills。",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jax"
+  },
+  "homepage": "https://github.com/YinJax/ruankao-sa-skills",
+  "repository": "https://github.com/YinJax/ruankao-sa-skills",
+  "license": "MIT",
+  "keywords": ["ruankao", "system-architect", "exam-coach"]
+}

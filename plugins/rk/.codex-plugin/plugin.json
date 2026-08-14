@@ -1,0 +1,29 @@
+{
+  "name": "rk",
+  "version": "1.0.0",
+  "description": "软考系统架构设计师基础知识、案例分析和论文训练 Skills。",
+  "author": {
+    "name": "Jax",
+    "url": "https://github.com/YinJax"
+  },
+  "homepage": "https://github.com/YinJax/ruankao-sa-skills",
+  "repository": "https://github.com/YinJax/ruankao-sa-skills",
+  "license": "MIT",
+  "keywords": ["codex", "skills", "ruankao", "system-architect", "exam-coach"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "RK Coach",
+    "shortDescription": "软考系统架构设计师基础、案例与论文训练",
+    "longDescription": "RK Coach 提供三个独立 Skill：basic 解释基础知识和计算题，case 训练案例分析，essay 诊断和修改论文。",
+    "developerName": "Jax",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://github.com/YinJax/ruankao-sa-skills",
+    "defaultPrompt": [
+      "Use RK basic to explain this exam topic",
+      "Use RK case to review this case answer",
+      "Use RK essay to diagnose this essay"
+    ],
+    "brandColor": "#2563EB"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "软考论文训练"
+  short_description: "诊断软考系统架构师论文，给出训练估分、风险和修改建议。"
+  default_prompt: "Use $essay 帮我诊断这篇论文并给出训练估分和修改建议。"

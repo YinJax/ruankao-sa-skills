@@ -1,0 +1,4 @@
+interface:
+  display_name: "软考案例分析"
+  short_description: "拆解软考系统架构师案例题，诊断答案并给出训练估分。"
+  default_prompt: "Use $case 帮我拆解这道案例题并诊断答案中的失分点。"

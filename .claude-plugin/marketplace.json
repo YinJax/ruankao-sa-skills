@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rk",
+  "description": "软考系统架构设计师基础知识、案例分析和论文训练 Skills。",
+  "owner": {
+    "name": "Jax"
+  },
+  "plugins": [
+    {
+      "name": "rk",
+      "description": "提供 basic、case 和 essay 三个软考系统架构设计师备考 Skill。",
+      "version": "1.0.0",
+      "category": "productivity",
+      "source": "./plugins/rk",
+      "homepage": "https://github.com/YinJax/ruankao-sa-skills"
+    }
+  ]
+}
