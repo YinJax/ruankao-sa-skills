@@ -1,0 +1,54 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RK Skills command cards</title>
+  <desc id="desc">Three command cards for rk-basic, rk-case, and rk-essay.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="920" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="basic" x1="64" y1="152" x2="304" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="case" x1="380" y1="152" x2="620" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="essay" x1="696" y1="152" x2="936" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DC2626"/>
+      <stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1000" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1E293B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="360" rx="32" fill="url(#bg)"/>
+  <path d="M77 74C137 30 232 38 288 82C348 129 438 119 498 70C560 20 662 22 728 76C787 124 860 126 925 88" stroke="#DBEAFE" stroke-width="22" stroke-linecap="round"/>
+  <path d="M82 292C144 254 216 254 274 292C340 335 436 330 492 282C557 226 663 230 724 287C782 341 872 329 928 280" stroke="#E0E7FF" stroke-width="18" stroke-linecap="round"/>
+
+  <g transform="translate(64 44)">
+    <text x="0" y="0" dominant-baseline="hanging" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">Ruankao SA Skills</text>
+    <text x="0" y="58" fill="#475569" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20">基础知识、案例分析、论文训练，拆成三个可调用的备考命令。</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="146" width="274" height="154" rx="22" fill="white"/>
+    <rect x="82" y="164" width="238" height="48" rx="16" fill="url(#basic)"/>
+    <text x="102" y="195" fill="white" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700">/rk-basic</text>
+    <text x="82" y="242" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">补基础</text>
+    <text x="82" y="272" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">考点解释 · 计算步骤 · 速记</text>
+
+    <rect x="363" y="146" width="274" height="154" rx="22" fill="white"/>
+    <rect x="381" y="164" width="238" height="48" rx="16" fill="url(#case)"/>
+    <text x="401" y="195" fill="white" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700">/rk-case</text>
+    <text x="381" y="242" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">拆案例</text>
+    <text x="381" y="272" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">线索提取 · 采分点 · 诊断</text>
+
+    <rect x="662" y="146" width="274" height="154" rx="22" fill="white"/>
+    <rect x="680" y="164" width="238" height="48" rx="16" fill="url(#essay)"/>
+    <text x="700" y="195" fill="white" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700">/rk-essay</text>
+    <text x="680" y="242" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">练论文</text>
+    <text x="680" y="272" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">题目覆盖 · 项目事实 · 修改项</text>
+  </g>
+</svg>

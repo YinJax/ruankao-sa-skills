@@ -4,6 +4,10 @@
 
 `ruankao-sa-skills` 适合在复习知识点、拆案例题、检查答案、打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
+<div align="center">
+  <img src="assets/rk-skills.svg" width="1000" alt="RK Skills command cards" />
+</div>
+
 ## What You Get
 
 | Skill | 你遇到的问题 | 它会产出什么 |
