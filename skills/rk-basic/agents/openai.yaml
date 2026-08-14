@@ -1,0 +1,4 @@
+interface:
+  display_name: "软考基础知识"
+  short_description: "解释软考系统架构师基础考点、计算题步骤和易混知识点。"
+  default_prompt: "Use $rk-basic 帮我解释这个软考系统架构师考点并检查易错点。"

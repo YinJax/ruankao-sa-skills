@@ -2,7 +2,7 @@
 
 `ruankao-sa-skills` 是一组面向软考高级系统架构设计师备考的 AI Skills。它把基础知识、案例分析和论文训练拆成三个独立命令，适合在复习、刷题、改答案和打磨论文时按需调用。
 
-每个 Skill 都有自己的工作流、参考资料和输出边界。Claude Code 可以用 slash command 直接触发，Codex 可以按同名 Skill 调用。
+仓库同时支持两种安装方式：可以用 `npx skills` 直接安装 Skill，也可以用 Codex / Claude Code 的 plugin 形式安装。每个 Skill 都有自己的工作流、参考资料和输出边界。
 
 ## Skills
 
@@ -16,12 +16,32 @@
 
 ## Install
 
+### npx skills
+
+适合想把这三个 Skill 安装到 Codex、Claude Code、Cursor 等支持 `SKILL.md` 的 Agent：
+
+```bash
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay -y
+```
+
+如果你的 `skills` CLI 会自动发现仓库根目录下的 `skills/`，也可以使用更短的安装命令：
+
+```bash
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g -y
+```
+
+安装后新开一个任务，让客户端重新加载 Skill。
+
+### Codex plugin
+
 Codex:
 
 ```bash
 codex plugin marketplace add YinJax/ruankao-sa-skills
 codex plugin add rk@rk
 ```
+
+### Claude Code plugin
 
 Claude Code:
 
@@ -32,7 +52,19 @@ Claude Code:
 
 安装后新开一个任务，让客户端重新加载插件。
 
-其他支持 `SKILL.md` 的 Agent，可以把 [`plugins/rk/skills`](plugins/rk/skills) 下需要的 Skill 目录复制到对应的 Skills 目录。每个 Skill 都由 `SKILL.md`、`references/` 和 `agents/openai.yaml` 组成，不依赖专有运行时。
+## Distribution
+
+根目录 [`skills/`](skills) 是 `npx skills` 的公开 Skill 源；[`plugins/rk/skills`](plugins/rk/skills) 是 plugin 安装所需的镜像副本。发布前运行同步检查，避免两套内容漂移：
+
+```powershell
+powershell -NoProfile -File scripts/sync-plugin-skills.ps1 -Check
+```
+
+如果修改了根目录 Skill，再同步到 plugin：
+
+```powershell
+powershell -NoProfile -File scripts/sync-plugin-skills.ps1
+```
 
 ## Examples
 
@@ -68,6 +100,10 @@ Skill 不会虚构题干、项目数据、技术栈、评分细则或官方政�
 ruankao-sa-skills/
 ├── .agents/plugins/marketplace.json
 ├── .claude-plugin/marketplace.json
+├── skills/
+│   ├── rk-basic/
+│   ├── rk-case/
+│   └── rk-essay/
 ├── plugins/rk/
 │   ├── .codex-plugin/plugin.json
 │   ├── .claude-plugin/plugin.json
@@ -75,6 +111,7 @@ ruankao-sa-skills/
 │       ├── rk-basic/
 │       ├── rk-case/
 │       └── rk-essay/
+├── scripts/sync-plugin-skills.ps1
 ├── LICENSE
 └── README.md
 ```
