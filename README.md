@@ -1,27 +1,31 @@
 # 软考系统架构设计师 Skills
 
-`ruankao-sa-skills` 是一组面向软考高级系统架构设计师备考的 AI Skills。它把基础知识、案例分析和论文训练拆成三个独立命令，适合在复习、刷题、改答案和打磨论文时按需调用。
+把软考高级系统架构设计师备考拆成三个可调用的 AI 教练：基础知识、案例分析、论文训练。
 
-仓库同时支持两种安装方式：可以用 `npx skills` 直接安装 Skill，也可以用 Codex / Claude Code 的 plugin 形式安装。每个 Skill 都有自己的工作流、参考资料和输出边界。
+`ruankao-sa-skills` 适合在复习知识点、拆案例题、检查答案、打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
-## Skills
+## What You Get
 
-| Skill | 适合什么时候用 | 它会做什么 |
+| Skill | 你遇到的问题 | 它会产出什么 |
 | --- | --- | --- |
-| `/rk-basic` | 补基础、复盘选择题、梳理易混点 | 解释综合知识考点，拆计算题步骤，整理知识框架和考前速记 |
-| `/rk-case` | 练案例分析、拆题干、检查答案 | 提取题干线索，定位考点和采分点，指出答案缺口并给出训练建议 |
-| `/rk-essay` | 准备论文、修改草稿、迁移项目素材 | 诊断题目覆盖度，检查项目事实，给出训练估分和优先修改项 |
+| `/rk-basic` | 选择题知识点看不懂、计算题不会拆步骤、易混概念记不牢 | 考点解释、计算步骤、知识框架、考前速记 |
+| `/rk-case` | 案例题题干抓不住、答案不知道漏了哪些采分点 | 题干线索、考点定位、分问答题框架、失分诊断 |
+| `/rk-essay` | 论文题目不会展开、项目素材不会迁移、草稿不知道怎么改 | 题目覆盖诊断、项目事实检查、训练估分、优先修改项 |
 
-这三个命令可以分开用，也可以按备考节奏串起来：先用 `rk-basic` 补知识点，再用 `rk-case` 训练分问作答，最后用 `rk-essay` 把项目经验整理成论文素材。
+推荐节奏：先用 `rk-basic` 补知识点，再用 `rk-case` 训练分问作答，最后用 `rk-essay` 把项目经验整理成论文素材。
 
-## Install
+## Quick Start
 
-### npx skills
-
-适合想把这三个 Skill 安装到 Codex、Claude Code、Cursor 等支持 `SKILL.md` 的 Agent：
+推荐用 `npx skills` 安装，适合 Codex、Claude Code、Cursor 等支持 `SKILL.md` 的 Agent：
 
 ```bash
 npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay -y
+```
+
+安装后新开一个任务，让客户端重新加载 Skill，然后直接调用：
+
+```text
+/rk-case 拆解下面这道案例题，指出我的答案漏了哪些采分点。
 ```
 
 如果你的 `skills` CLI 会自动发现仓库根目录下的 `skills/`，也可以使用更短的安装命令：
@@ -30,41 +34,35 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --sk
 npx skills@latest add YinJax/ruankao-sa-skills -a codex -g -y
 ```
 
-安装后新开一个任务，让客户端重新加载 Skill。
+## Install
 
-### Codex plugin
+### Recommended: `npx skills`
 
-Codex:
+安装指定的三个 Skill：
+
+```bash
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay -y
+```
+
+把 `codex` 换成你的目标 Agent，例如 `claude-code`、`cursor` 或其它 `skills` CLI 支持的 Agent。
+
+### Codex Plugin
 
 ```bash
 codex plugin marketplace add YinJax/ruankao-sa-skills
 codex plugin add rk@rk
 ```
 
-### Claude Code plugin
+安装后新开一个任务，让 Codex 重新加载插件。
 
-Claude Code:
+### Claude Code Plugin
 
 ```text
 /plugin marketplace add YinJax/ruankao-sa-skills
 /plugin install rk@rk
 ```
 
-安装后新开一个任务，让客户端重新加载插件。
-
-## Distribution
-
-根目录 [`skills/`](skills) 是 `npx skills` 的公开 Skill 源；[`plugins/rk/skills`](plugins/rk/skills) 是 plugin 安装所需的镜像副本。发布前运行同步检查，避免两套内容漂移：
-
-```powershell
-powershell -NoProfile -File scripts/sync-plugin-skills.ps1 -Check
-```
-
-如果修改了根目录 Skill，再同步到 plugin：
-
-```powershell
-powershell -NoProfile -File scripts/sync-plugin-skills.ps1
-```
+安装后新开一个任务，让 Claude Code 重新加载插件。
 
 ## Examples
 
@@ -77,13 +75,19 @@ powershell -NoProfile -File scripts/sync-plugin-skills.ps1
 拆案例题：
 
 ```text
-/rk-case 拆解下面这道案例题，指出我的答案漏了哪些采分点。
+/rk-case 题干如下，帮我提取关键线索、定位考点，并检查我的答案漏了哪些采分点。
 ```
 
 改论文草稿：
 
 ```text
-/rk-essay 根据题目和项目事实诊断这篇论文，给出训练估分和优先修改项。
+/rk-essay 根据题目、项目事实和我的草稿，诊断这篇论文的过线风险，给出训练估分和优先修改项。
+```
+
+串联复习：
+
+```text
+先用 /rk-basic 帮我补齐 Redis 缓存一致性的基础知识，再用 /rk-case 帮我整理案例题答题框架。
 ```
 
 ## Boundaries
@@ -93,6 +97,26 @@ powershell -NoProfile -File scripts/sync-plugin-skills.ps1
 Skill 不会虚构题干、项目数据、技术栈、评分细则或官方政策。报名时间、考试安排、大纲和地区政策等信息，请以当次官方通知为准。
 
 生成内容适合用来复习、诊断和改写，不建议直接背诵或照搬到考场。
+
+## For Maintainers
+
+这个仓库同时支持 `npx skills` 和 native plugin 两种分发方式：
+
+- 根目录 [`skills/`](skills) 是 `npx skills` 的公开 Skill 源。
+- [`plugins/rk/skills`](plugins/rk/skills) 是 Codex / Claude Code plugin 安装所需的镜像副本。
+- 修改 Skill 时，优先改根目录 `skills/`，再同步到 plugin 目录。
+
+发布前检查两套内容是否一致：
+
+```powershell
+powershell -NoProfile -File scripts/sync-plugin-skills.ps1 -Check
+```
+
+如果修改了根目录 Skill，再同步到 plugin：
+
+```powershell
+powershell -NoProfile -File scripts/sync-plugin-skills.ps1
+```
 
 ## Structure
 
