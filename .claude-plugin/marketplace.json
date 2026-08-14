@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "rk",
-      "description": "提供 basic、case 和 essay 三个软考系统架构设计师备考 Skill。",
+      "description": "提供 rk-basic、rk-case 和 rk-essay 三个软考系统架构设计师备考 Skill。",
       "version": "1.0.0",
       "category": "productivity",
       "source": "./plugins/rk",
