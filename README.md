@@ -5,11 +5,11 @@
 `ruankao-sa-skills` 适合在复习知识点、拆案例题、检查答案、打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
 <div align="center">
-  <img src="assets/rk-basic.svg" width="760" alt="/rk-basic 基础知识复习路径" />
+  <img src="assets/rk-basic.svg" width="640" alt="/rk-basic 基础知识复习路径" />
   <br />
-  <img src="assets/rk-case.svg" width="760" alt="/rk-case 案例分析作答路径" />
+  <img src="assets/rk-case.svg" width="640" alt="/rk-case 案例分析作答路径" />
   <br />
-  <img src="assets/rk-essay.svg" width="760" alt="/rk-essay 论文训练修改路径" />
+  <img src="assets/rk-essay.svg" width="640" alt="/rk-essay 论文训练修改路径" />
 </div>
 
 ## What You Get
