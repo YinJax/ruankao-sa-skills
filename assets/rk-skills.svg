@@ -1,31 +1,44 @@
-<svg width="100%" viewBox="0 48 680 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">RK Skills 备考路径</title>
-  <desc id="desc">基础知识、案例分析和论文训练三个软考系统架构设计师命令。</desc>
-  <style>
-    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
-    .command { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-  </style>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="0 0 960 248" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rk-skills-title rk-skills-desc">
+  <title id="rk-skills-title">软考系统架构设计师三个命令</title>
+  <desc id="rk-skills-desc">展示 rk-basic、rk-case、rk-essay 三个软考系统架构设计师备考命令及各自能力。</desc>
+  <defs>
+    <style>
+      .title { font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
 
-  <path d="M340 72V272" stroke="#73726C" stroke-width=".75" stroke-dasharray="4 3"/>
+  <rect width="960" height="248" fill="#F7F6F2"/>
+  <text x="48" y="44" class="title" fill="#24211D" font-size="28">Ruankao SA Skills</text>
+  <text x="48" y="72" class="mono" fill="#6B6A64" font-size="12" letter-spacing=".14em">THREE COMMANDS · ONE EXAM WORKFLOW</text>
 
-  <path d="M278 100H307M373 100H402" stroke="#73726C" stroke-width=".75" stroke-dasharray="4 3"/>
-  <text x="340" y="104" text-anchor="middle" class="label" fill="#3D3D3A" fill-opacity=".55" font-size="13">夯实</text>
-  <rect x="45" y="72" width="230" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width=".75"/>
-  <text x="160" y="93" text-anchor="middle" dominant-baseline="central" class="command" fill="#3C3489" font-size="15" font-weight="600">/rk-basic</text>
-  <text x="160" y="113" text-anchor="middle" dominant-baseline="central" class="label" fill="#534AB7" font-size="15" font-weight="500">考点 · 计算 · 速记</text>
-  <text x="520" y="105" text-anchor="middle" dominant-baseline="central" class="label" fill="#534AB7" font-size="15" font-weight="500">建立知识坐标</text>
+  <path d="M304 144H352" stroke="#A7A39A" stroke-width=".8" stroke-dasharray="4 4"/>
+  <path d="M608 144H656" stroke="#A7A39A" stroke-width=".8" stroke-dasharray="4 4"/>
 
-  <path d="M278 172H307M373 172H402" stroke="#73726C" stroke-width=".75" stroke-dasharray="4 3"/>
-  <text x="340" y="176" text-anchor="middle" class="label" fill="#3D3D3A" fill-opacity=".55" font-size="13">应用</text>
-  <text x="160" y="177" text-anchor="middle" dominant-baseline="central" class="label" fill="#0F6E56" font-size="15" font-weight="500">从题干找到线索</text>
-  <rect x="405" y="144" width="230" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width=".75"/>
-  <text x="520" y="165" text-anchor="middle" dominant-baseline="central" class="command" fill="#085041" font-size="15" font-weight="600">/rk-case</text>
-  <text x="520" y="185" text-anchor="middle" dominant-baseline="central" class="label" fill="#0F6E56" font-size="15" font-weight="500">线索 · 采分点 · 诊断</text>
+  <rect x="48" y="96" width="256" height="96" rx="8" fill="#FFFFFF" stroke="rgba(36,33,29,.14)" stroke-width="1"/>
+  <rect x="64" y="112" width="64" height="20" rx="4" fill="#EEF0FF" stroke="rgba(67,75,154,.24)" stroke-width=".8"/>
+  <text x="96" y="126" class="mono" fill="#434B9A" font-size="10" font-weight="600" text-anchor="middle">BASIC</text>
+  <text x="176" y="136" class="mono" fill="#252A73" font-size="20" font-weight="700" text-anchor="middle">/rk-basic</text>
+  <text x="176" y="164" class="sans" fill="#4F56A8" font-size="16" font-weight="600" text-anchor="middle">考点 · 计算 · 速记</text>
+  <text x="176" y="184" class="sans" fill="#77756E" font-size="12" text-anchor="middle">先把知识坐标搭稳</text>
 
-  <path d="M278 244H307M373 244H402" stroke="#73726C" stroke-width=".75" stroke-dasharray="4 3"/>
-  <text x="340" y="248" text-anchor="middle" class="label" fill="#3D3D3A" fill-opacity=".55" font-size="13">输出</text>
-  <rect x="45" y="216" width="230" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width=".75"/>
-  <text x="160" y="237" text-anchor="middle" dominant-baseline="central" class="command" fill="#712B13" font-size="15" font-weight="600">/rk-essay</text>
-  <text x="160" y="257" text-anchor="middle" dominant-baseline="central" class="label" fill="#993C1D" font-size="15" font-weight="500">覆盖 · 事实 · 修改</text>
-  <text x="520" y="249" text-anchor="middle" dominant-baseline="central" class="label" fill="#993C1D" font-size="15" font-weight="500">写出可过线论文</text>
+  <rect x="352" y="96" width="256" height="96" rx="8" fill="#FFFFFF" stroke="rgba(36,33,29,.14)" stroke-width="1"/>
+  <rect x="368" y="112" width="56" height="20" rx="4" fill="#E8F6F0" stroke="rgba(15,110,86,.24)" stroke-width=".8"/>
+  <text x="396" y="126" class="mono" fill="#0F6E56" font-size="10" font-weight="600" text-anchor="middle">CASE</text>
+  <text x="480" y="136" class="mono" fill="#084E3F" font-size="20" font-weight="700" text-anchor="middle">/rk-case</text>
+  <text x="480" y="164" class="sans" fill="#0F6E56" font-size="16" font-weight="600" text-anchor="middle">线索 · 采分点 · 诊断</text>
+  <text x="480" y="184" class="sans" fill="#77756E" font-size="12" text-anchor="middle">从题干找到可得分答案</text>
+
+  <rect x="656" y="96" width="256" height="96" rx="8" fill="#FFFFFF" stroke="rgba(36,33,29,.14)" stroke-width="1"/>
+  <rect x="672" y="112" width="56" height="20" rx="4" fill="#FCEDE8" stroke="rgba(153,60,29,.24)" stroke-width=".8"/>
+  <text x="700" y="126" class="mono" fill="#993C1D" font-size="10" font-weight="600" text-anchor="middle">ESSAY</text>
+  <text x="784" y="136" class="mono" fill="#712B13" font-size="20" font-weight="700" text-anchor="middle">/rk-essay</text>
+  <text x="784" y="164" class="sans" fill="#993C1D" font-size="16" font-weight="600" text-anchor="middle">覆盖 · 事实 · 修改</text>
+  <text x="784" y="184" class="sans" fill="#77756E" font-size="12" text-anchor="middle">把项目经验写成过线论文</text>
+
+  <line x1="48" y1="216" x2="912" y2="216" stroke="rgba(36,33,29,.12)" stroke-width=".8"/>
+  <text x="48" y="236" class="mono" fill="#77756E" font-size="9" letter-spacing=".16em">USE ORDER</text>
+  <text x="136" y="236" class="sans" fill="#5E5B54" font-size="12">基础补齐 → 案例训练 → 论文成稿</text>
 </svg>
