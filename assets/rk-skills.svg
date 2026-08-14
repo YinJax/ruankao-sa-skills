@@ -1,41 +1,33 @@
-<svg width="1000" height="220" viewBox="0 0 1000 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">RK Skills command cards</title>
-  <desc id="desc">Three minimal command cards for rk-basic, rk-case, and rk-essay.</desc>
-  <defs>
-    <linearGradient id="basic" x1="64" y1="48" x2="300" y2="168" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#0F766E"/>
-    </linearGradient>
-    <linearGradient id="case" x1="382" y1="48" x2="618" y2="168" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#2563EB"/>
-    </linearGradient>
-    <linearGradient id="essay" x1="700" y1="48" x2="936" y2="168" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#DC2626"/>
-      <stop offset="1" stop-color="#D97706"/>
-    </linearGradient>
-    <filter id="cardShadow" x="24" y="18" width="952" height="184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
-    </filter>
-  </defs>
+<svg width="100%" viewBox="0 0 680 292" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RK Skills 备考路径</title>
+  <desc id="desc">从基础知识到案例分析，再到论文训练的三个软考系统架构设计师备考命令。</desc>
+  <style>
+    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    .command { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
 
-  <g filter="url(#cardShadow)">
-    <rect x="64" y="42" width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
-    <rect x="84" y="62" width="214" height="42" rx="12" fill="url(#basic)"/>
-    <text x="104" y="89" fill="#FFFFFF" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700">/rk-basic</text>
-    <text x="84" y="132" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">补基础</text>
-    <text x="84" y="157" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">考点解释 · 计算步骤 · 速记</text>
+  <path d="M340 42V266" stroke="#A8A29E" stroke-width=".75" stroke-dasharray="4 4"/>
 
-    <rect x="373" y="42" width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
-    <rect x="393" y="62" width="214" height="42" rx="12" fill="url(#case)"/>
-    <text x="413" y="89" fill="#FFFFFF" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700">/rk-case</text>
-    <text x="393" y="132" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">拆案例</text>
-    <text x="393" y="157" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">线索提取 · 采分点 · 诊断</text>
+  <path d="M278 68H309M371 68H402" stroke="#A8A29E" stroke-width=".75" stroke-dasharray="4 3"/>
+  <text x="340" y="72" text-anchor="middle" class="label" fill="#78716C" font-size="12">夯实</text>
+  <rect x="45" y="40" width="230" height="56" rx="8" fill="#EEF2FF" stroke="#6366F1" stroke-width=".75"/>
+  <text x="160" y="62" text-anchor="middle" dominant-baseline="central" class="command" fill="#3730A3" font-size="14" font-weight="600">/rk-basic</text>
+  <text x="160" y="81" text-anchor="middle" dominant-baseline="central" class="label" fill="#4F46E5" font-size="12">考点、计算与速记</text>
+  <text x="520" y="70" text-anchor="middle" dominant-baseline="central" class="label" fill="#78716C" font-size="12">建立知识坐标</text>
 
-    <rect x="682" y="42" width="254" height="136" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
-    <rect x="702" y="62" width="214" height="42" rx="12" fill="url(#essay)"/>
-    <text x="722" y="89" fill="#FFFFFF" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700">/rk-essay</text>
-    <text x="702" y="132" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">练论文</text>
-    <text x="702" y="157" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">题目覆盖 · 项目事实 · 修改项</text>
-  </g>
+  <path d="M278 140H309M371 140H402" stroke="#A8A29E" stroke-width=".75" stroke-dasharray="4 3"/>
+  <text x="340" y="144" text-anchor="middle" class="label" fill="#78716C" font-size="12">应用</text>
+  <text x="160" y="142" text-anchor="middle" dominant-baseline="central" class="label" fill="#78716C" font-size="12">从题干中找到得分线索</text>
+  <rect x="405" y="112" width="230" height="56" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width=".75"/>
+  <text x="520" y="134" text-anchor="middle" dominant-baseline="central" class="command" fill="#047857" font-size="14" font-weight="600">/rk-case</text>
+  <text x="520" y="153" text-anchor="middle" dominant-baseline="central" class="label" fill="#059669" font-size="12">线索、采分点与诊断</text>
+
+  <path d="M278 212H309M371 212H402" stroke="#A8A29E" stroke-width=".75" stroke-dasharray="4 3"/>
+  <text x="340" y="216" text-anchor="middle" class="label" fill="#78716C" font-size="12">输出</text>
+  <rect x="45" y="184" width="230" height="56" rx="8" fill="#FFF7ED" stroke="#EA580C" stroke-width=".75"/>
+  <text x="160" y="206" text-anchor="middle" dominant-baseline="central" class="command" fill="#C2410C" font-size="14" font-weight="600">/rk-essay</text>
+  <text x="160" y="225" text-anchor="middle" dominant-baseline="central" class="label" fill="#EA580C" font-size="12">题目覆盖、项目事实与修改</text>
+  <text x="520" y="214" text-anchor="middle" dominant-baseline="central" class="label" fill="#78716C" font-size="12">写出一篇可过线的论文</text>
+
+  <text x="340" y="276" text-anchor="middle" class="label" fill="#A8A29E" font-size="11">基础 → 案例 → 论文</text>
 </svg>
