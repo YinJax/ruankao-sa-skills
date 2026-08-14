@@ -5,7 +5,7 @@ description: "用于软考高级系统架构设计师论文训练：诊断题干
 
 # 软考高级系统架构设计师论文教练
 
-Produce a credible, topic-aligned, pass-oriented essay. Treat the 59-paper corpus as evidence of common structure and coverage, never as an answer bank, official rule, or score-labelled dataset.
+Produce a credible, topic-aligned, pass-oriented essay. Treat the bundled sample materials as evidence of common structure and coverage, never as an answer bank, official rule, or score-labelled dataset.
 
 ## Boundaries
 
@@ -22,7 +22,8 @@ Produce a credible, topic-aligned, pass-oriented essay. Treat the 59-paper corpu
 4. Load [scoring-calibration.md](references/scoring-calibration.md). With no official score-labelled papers, state `校准状态：未校准` and `误差：未知`.
 5. Diagnose before revising. Load [project-fact-card.md](references/project-fact-card.md) when facts are weak; load [essay-architecture.md](references/essay-architecture.md) before substantial revision.
 6. Load [topic-modules.md](references/topic-modules.md) only to select a relevant primary module and at most one supporting module.
-7. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
+7. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
+8. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
 
 ## Score Language
 

@@ -1,6 +1,6 @@
-# 59 篇样本的校准用途
+# 样本的校准用途
 
-The local corpus contains 59 Markdown papers, including two large compilations and individual topic papers. Use it as a pattern corpus, not a truth source for the official marking standard.
+The local corpus contains Markdown papers, converted books, and topic examples. Use it as a pattern corpus, not a truth source for the official marking standard.
 
 ## Reusable patterns
 
@@ -14,6 +14,7 @@ The local corpus contains 59 Markdown papers, including two large compilations a
 - The corpus includes overlapping topics and template-like project narratives; repeated wording is not evidence of correctness.
 - Some examples use generic claims or unusually neat numerical results. Never treat these as facts to reuse.
 - Sample structure can inform coverage and paragraph rhythm, but official grading outcomes cannot be inferred from the corpus alone.
+- Converted instructional files under `instructional-corpus/` have `score_label: none` and `calibration_eligible: false`; they can support topic and structure checks, not official score calibration.
 
 ## Use in Feedback
 

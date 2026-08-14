@@ -4,7 +4,7 @@ Calibration reduces uncertainty; it does not create official authority.
 
 ## Current State
 
-The 59-paper corpus has no verified official score labels. Use it for structural coaching only. For score-like output, report `校准状态：未校准` and `误差：未知`.
+The bundled corpus has no verified official score labels. Converted books and topic examples are instructional samples only. Use them for structural coaching, topic coverage, and risk detection. For score-like output, report `校准状态：未校准` and `误差：未知`.
 
 ## Calibrated Mode
 
@@ -18,3 +18,12 @@ Record only anonymous ID, prompt family, training estimate, official score, sign
 4. Change range width or hard-risk rules only after a repeated pattern appears across at least three papers.
 
 Only state an observed error for a comparable, actually computed calibration set. Do not generalize it to all years, regions, topics, or evaluators.
+
+## Range Tightening
+
+Instructional samples may justify modest tightening when they reduce uncertainty about topic coverage or essay structure. They do not justify calibrated precision.
+
+- Keep wide ranges when the essay is a template, outline, excerpt, or lacks user-supplied facts.
+- Use a medium range when the essay is complete but has one or two score-sensitive weaknesses.
+- Use a narrower training range only when prompt coverage, project facts, architecture depth, issue-solution-result loops, and organization are all visible.
+- Do not narrow below about 6 points without a real official score-labelled calibration set.
