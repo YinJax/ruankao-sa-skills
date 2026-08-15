@@ -1,6 +1,6 @@
 ---
 name: rk-essay
-description: "用于软考高级系统架构设计师论文训练：诊断题干覆盖、识别过线风险、给出非官方训练估分、基于项目事实修改论文，并生成可按主题替换的考场模板。适用于用户提供论文题目、草稿、项目事实、官方分数校准样本，或要求论文评分、诊断、修改、模板生成时。"
+description: "用于软考高级系统架构设计师论文训练：当用户需要论文评分、题干覆盖诊断、项目事实访谈、事实卡整理、主题素材库、草稿修改或考场模板时使用。"
 ---
 
 # 软考高级系统架构设计师论文教练
@@ -20,10 +20,11 @@ Produce a credible, topic-aligned, pass-oriented essay. Treat the bundled sample
 2. Load [rubric.md](references/rubric.md). Check hard risks before estimating a range.
 3. Report five evidence-backed coaching dimensions. Do not mechanically total them.
 4. Load [scoring-calibration.md](references/scoring-calibration.md). With no official score-labelled papers, state `校准状态：未校准` and `误差：未知`.
-5. Diagnose before revising. Load [project-fact-card.md](references/project-fact-card.md) when facts are weak; load [essay-architecture.md](references/essay-architecture.md) before substantial revision.
-6. Load [topic-modules.md](references/topic-modules.md) only to select a relevant primary module and at most one supporting module.
-7. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
-8. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
+5. Diagnose before revising. Load [fact-to-draft.md](references/fact-to-draft.md) when the user needs fact interview, fact card, topic material bank, contradiction checks, vague-result detection, or next-practice planning.
+6. Load [project-fact-card.md](references/project-fact-card.md) when facts are weak; load [essay-architecture.md](references/essay-architecture.md) before substantial revision.
+7. Load [topic-modules.md](references/topic-modules.md) only to select a relevant primary module and at most one supporting module.
+8. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
+9. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
 
 ## Score Language
 
@@ -43,9 +44,11 @@ When comparing with a pass line, load [official-boundaries.md](references/offici
 3. `硬风险`：逐项列出命中或明确写“未发现”。
 4. `分维度诊断`：按 [rubric.md](references/rubric.md) 给出判断与证据。
 5. `优先修改清单`：最多五项，按过线影响排序，每项给出可执行动作。
-6. `改写示例或提纲`：只改薄弱段落，或给出可替换骨架；不虚构项目数据。
-7. `考场模板`：仅在用户要求时输出，并标出必须按题干替换的部分。
+6. `事实与素材补强`：在事实薄弱、成果空泛或用户要求构思时输出事实访谈问题、事实卡缺口、主题素材库和矛盾检查。
+7. `下一次练什么`：给出最多三项下一轮练习任务，每项说明目标、输入材料和验收标准。
+8. `改写示例或提纲`：只改薄弱段落，或给出可替换骨架；不虚构项目数据。
+9. `考场模板`：仅在用户要求时输出，并标出必须按题干替换的部分。
 
 ## Completion Criteria
 
-Finish only when every prompt obligation is mapped; each score range has evidence, uncertainty, and calibration status; hard risks are checked; revision actions are concrete; and each project claim is user-supplied or marked `[待本人确认]`.
+Finish only when every prompt obligation is mapped; each score range has evidence, uncertainty, and calibration status; hard risks are checked; revision actions are concrete; every project claim is user-supplied or marked `[待本人确认]`; and the next-practice task is specific enough for the user to act on.
