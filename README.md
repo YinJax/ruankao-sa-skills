@@ -1,11 +1,11 @@
 # 软考系统架构设计师 Skills
 
-把软考高级系统架构设计师备考拆成三个可调用的 AI 教练：基础知识、案例分析、论文训练。
+把软考高级系统架构设计师备考拆成四个可调用的 AI 教练：基础知识、案例分析、论文训练、论文模板生成。
 
 `ruankao-sa-skills` 适合在复习知识点、拆案例题、检查答案、打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
 <div align="center">
-  <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师三个命令：/rk-basic、/rk-case、/rk-essay" />
+  <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师四个命令：/rk-basic、/rk-case、/rk-essay、/rk-essay-template" />
 </div>
 
 ## What You Get
@@ -15,15 +15,16 @@
 | `/rk-basic` | 选择题知识点看不懂、计算题不会拆步骤、易混概念记不牢 | 考点解释、计算步骤、知识框架、考前速记 |
 | `/rk-case` | 案例题题干抓不住、答案不知道漏了哪些采分点 | 题干线索、考点定位、分问答题框架、失分诊断 |
 | `/rk-essay` | 论文题目不会展开、项目素材不会迁移、草稿不知道怎么改 | 题目覆盖诊断、项目事实检查、训练估分、优先修改项 |
+| `/rk-essay-template` | 想先把项目事实和题目要求拼成可套用模板 | 题目拆解、事实补强、可替换论文模板 |
 
-推荐节奏：先用 `rk-basic` 补知识点，再用 `rk-case` 训练分问作答，最后用 `rk-essay` 把项目经验整理成论文素材。
+推荐节奏：先用 `rk-basic` 补知识点，再用 `rk-case` 训练分问作答，接着用 `rk-essay-template` 搭模板，最后用 `rk-essay` 打磨论文。
 
 ## Quick Start
 
 推荐用 `npx skills` 安装，适合 Codex、Claude Code、Cursor 等支持 `SKILL.md` 的 Agent：
 
 ```bash
-npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay -y
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay --skill rk-essay-template -y
 ```
 
 安装后新开一个任务，让客户端重新加载 Skill，然后直接调用：
@@ -42,10 +43,10 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g -y
 
 ### Recommended: `npx skills`
 
-安装指定的三个 Skill：
+安装指定的四个 Skill：
 
 ```bash
-npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay -y
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay --skill rk-essay-template -y
 ```
 
 把 `codex` 换成你的目标 Agent，例如 `claude-code`、`cursor` 或其它 `skills` CLI 支持的 Agent。
@@ -86,6 +87,12 @@ codex plugin add rk@rk
 
 ```text
 /rk-essay 根据题目、项目事实和我的草稿，诊断这篇论文的过线风险，给出训练估分和优先修改项。
+```
+
+先生成模板：
+
+```text
+/rk-essay-template 根据题目要求和我的项目事实，先生成一份能适配不同命题的论文模板。
 ```
 
 串联复习：
@@ -131,14 +138,16 @@ ruankao-sa-skills/
 ├── skills/
 │   ├── rk-basic/
 │   ├── rk-case/
-│   └── rk-essay/
+│   ├── rk-essay/
+│   └── rk-essay-template/
 ├── plugins/rk/
 │   ├── .codex-plugin/plugin.json
 │   ├── .claude-plugin/plugin.json
 │   └── skills/
 │       ├── rk-basic/
 │       ├── rk-case/
-│       └── rk-essay/
+│       ├── rk-essay/
+│       └── rk-essay-template/
 ├── scripts/sync-plugin-skills.ps1
 ├── LICENSE
 └── README.md

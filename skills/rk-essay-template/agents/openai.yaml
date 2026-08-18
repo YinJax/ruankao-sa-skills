@@ -1,0 +1,4 @@
+interface:
+  display_name: "软考论文模板生成"
+  short_description: "根据题目、选题和项目事实生成可替换的软考考场论文模板"
+  default_prompt: "Use $rk-essay-template 根据题目要求和我的项目事实生成一份可替换的软考论文模板。"

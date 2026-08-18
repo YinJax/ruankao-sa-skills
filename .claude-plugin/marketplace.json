@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "rk",
-  "description": "软考系统架构设计师基础知识、案例分析和论文训练 Skills。",
+  "description": "软考系统架构设计师基础知识、案例分析、论文训练和论文模板生成 Skills。",
   "owner": {
     "name": "Jax"
   },
   "plugins": [
     {
       "name": "rk",
-      "description": "提供 rk-basic、rk-case 和 rk-essay 三个软考系统架构设计师备考 Skill。",
+      "description": "提供 rk-basic、rk-case、rk-essay 和 rk-essay-template 四个软考系统架构设计师备考 Skill。",
       "version": "1.0.0",
       "category": "productivity",
       "source": "./plugins/rk",

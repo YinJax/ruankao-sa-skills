@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "RK Coach",
     "shortDescription": "软考系统架构设计师基础、案例与论文训练",
-    "longDescription": "RK Coach 提供三个独立 Skill：rk-basic 解释基础知识和计算题，rk-case 训练案例分析，rk-essay 诊断和修改论文。",
+    "longDescription": "RK Coach 提供四个独立 Skill：rk-basic 解释基础知识和计算题，rk-case 训练案例分析，rk-essay 诊断和修改论文，rk-essay-template 生成可替换论文模板。",
     "developerName": "Jax",
     "category": "Productivity",
     "capabilities": ["Interactive"],
@@ -22,7 +22,8 @@
     "defaultPrompt": [
       "Use $rk-basic to explain this exam topic",
       "Use $rk-case to review this case answer",
-      "Use $rk-essay to diagnose this essay"
+      "Use $rk-essay to diagnose this essay",
+      "Use $rk-essay-template to build a paper template"
     ],
     "brandColor": "#2563EB"
   }
