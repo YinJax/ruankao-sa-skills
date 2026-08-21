@@ -23,8 +23,9 @@ Produce a credible, topic-aligned, pass-oriented essay. Treat the bundled sample
 5. Diagnose before revising. Load [fact-to-draft.md](references/fact-to-draft.md) when the user needs fact interview, fact card, topic material bank, contradiction checks, vague-result detection, or next-practice planning.
 6. Load [project-fact-card.md](references/project-fact-card.md) when facts are weak; load [essay-architecture.md](references/essay-architecture.md) before substantial revision.
 7. Load [topic-modules.md](references/topic-modules.md) only to select a relevant primary module and at most one supporting module.
-8. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
-9. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
+8. Load [essay-sample-patterns.md](references/essay-sample-patterns.md) when diagnosing whether the draft has exam-like structure without copying sample wording.
+9. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
+10. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
 
 ## Score Language
 

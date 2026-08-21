@@ -11,7 +11,7 @@ description: "Generates replaceable exam writing templates from Advanced System 
 
 1. 先确认题目、选题方向、项目事实和要套用的格式。
 2. 区分用户项目事实、历年真题和范文素材；范文只提取分类、论点和段落结构。
-3. 先过输入材料门槛，再拆题和判断项目主题是否匹配；缺少事实时先补访谈问题。
+3. 先用历年真题模式拆出题干义务，再判断项目主题是否匹配；缺少事实时先补访谈问题。
 4. 按摘要、背景、理论、项目应用、总结输出可替换模板。
 5. 检查题干覆盖、事实一致、近三年项目约束、角色一致和成果不空泛。
 
@@ -21,6 +21,8 @@ description: "Generates replaceable exam writing templates from Advanced System 
 - 需要把题目要求转成模板流程时，读取 [template-workflow.md](references/template-workflow.md)。
 - 需要判断某个项目是否能支撑某个题目时，读取 [topic-fit.md](references/topic-fit.md)。
 - 需要根据论文范文分类或历年真题选择论点模块时，读取 [exam-topic-catalog.md](references/exam-topic-catalog.md)。
+- 需要把论文题干转成必须回应的写作义务时，读取 [prompt-obligation-patterns.md](references/prompt-obligation-patterns.md)。
+- 需要借鉴范文或模板资料时，读取 [essay-sample-patterns.md](references/essay-sample-patterns.md)，只吸收结构，不复写原文。
 - 需要参考近年论文真题的命题分布和替换方向时，读取 [past-paper-map.md](references/past-paper-map.md)。
 - 用户提供范文、必背材料或模板资料时，读取 [source-material-boundaries.md](references/source-material-boundaries.md)。
 

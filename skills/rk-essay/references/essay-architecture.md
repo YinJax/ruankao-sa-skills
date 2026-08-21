@@ -28,3 +28,12 @@ Make the topic-specific section visible with numbered subheadings that mirror th
 ## Paragraph Check
 
 Before keeping a paragraph, confirm it contributes to a prompt obligation, a project fact, a decision rationale, or an evidence-backed result. Replace pure textbook exposition with a project-linked explanation.
+
+## Exam-Like Shape Check
+
+Before substantial rewrite, check the draft against `essay-sample-patterns.md`:
+
+- 摘要是否同时给出题目、项目、角色、核心措施和结果。
+- 正文是否是 3 个左右的题目相关论点，而不是技术清单。
+- 每个论点是否包含本人动作、方案权衡和可观察结果。
+- 结尾是否回扣题目，并承认一个真实不足或后续改进。
