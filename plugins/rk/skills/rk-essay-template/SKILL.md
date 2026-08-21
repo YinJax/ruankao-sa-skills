@@ -1,6 +1,6 @@
 ---
 name: rk-essay-template
-description: "用于根据软考论文题目和用户项目事实生成可替换的考场写作模板。"
+description: "Generates replaceable exam writing templates from Advanced System Architect essay prompts and the user's real project facts."
 ---
 
 # 软考论文模板生成器

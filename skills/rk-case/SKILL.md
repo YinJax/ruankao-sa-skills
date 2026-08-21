@@ -1,6 +1,6 @@
 ---
 name: rk-case
-description: "用于软考高级系统架构设计师案例分析训练：当用户需要题干线索拆解、考点定位、分问答题框架、答案诊断、训练估分、答题模板或专题速记时使用。"
+description: "Case analysis coach for the Advanced System Architect exam: prompt clue breakdown, topic identification, answer frameworks, answer diagnosis, practice scoring, response templates, and topic notes."
 ---
 
 # 软考系统架构师案例分析助手 Skill

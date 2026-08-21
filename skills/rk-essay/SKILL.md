@@ -1,6 +1,6 @@
 ---
 name: rk-essay
-description: "用于软考高级系统架构设计师论文训练：当用户需要论文评分、题干覆盖诊断、项目事实访谈、事实卡整理、主题素材库、草稿修改或考场模板时使用。"
+description: "Essay coach for the Advanced System Architect exam: essay scoring, prompt coverage diagnosis, project fact interviews, fact cards, topic material libraries, draft revision, and exam templates."
 ---
 
 # 软考高级系统架构设计师论文教练

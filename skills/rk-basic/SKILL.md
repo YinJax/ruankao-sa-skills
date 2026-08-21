@@ -1,6 +1,6 @@
 ---
 name: rk-basic
-description: "用于软考高级系统架构设计师基础知识复习：当用户需要考点解释、知识框架、易混点辨析、计算题拆解、考前速记或错题复盘时使用。"
+description: "Review assistant for the Advanced System Architect exam: concept explanations, knowledge maps, comparison of confusing topics, calculation walkthroughs, quick memorization, and mistake review."
 ---
 
 # 软考系统架构师基础知识助手

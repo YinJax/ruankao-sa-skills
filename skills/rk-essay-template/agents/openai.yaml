@@ -1,4 +1,4 @@
 interface:
-  display_name: "软考论文模板生成"
-  short_description: "按真题方向和项目事实生成可替换的软考论文模板"
-  default_prompt: "Use $rk-essay-template 根据论文题目、真题要求和我的项目事实生成一份可替换的考场写作模板；范文只用于提取结构和论点。"
+  display_name: "rk-essay-template"
+  short_description: "Replaceable essay templates from project facts."
+  default_prompt: "Use $rk-essay-template to create an essay template from my facts."
