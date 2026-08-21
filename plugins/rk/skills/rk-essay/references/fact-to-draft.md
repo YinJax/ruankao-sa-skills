@@ -76,14 +76,30 @@ Flag these issues before writing a full draft:
 
 ## Next Practice
 
-End coaching with at most three next tasks. Use this shape:
+End coaching with 1-3 next tasks. Pick the smallest task that fixes the most pass-relevant weakness.
 
 ```text
 下一次练什么
 - 任务：
 - 目标：
 - 输入：
+- 限时：
 - 验收：
 ```
 
-Choose the task from the most pass-relevant gap: prompt coverage, project fact credibility, topic decision chain, result evidence, paragraph structure, or timed writing.
+Choose from this priority order:
+
+1. `题干覆盖`：有明确题干义务缺失时，先练补齐该义务。
+2. `项目事实可信度`：项目时间、角色、决策、动作或结果断链时，先练事实卡。
+3. `主题决策链`：理论段只有概念时，练“约束 -> 决策 -> 实施 -> 权衡 -> 结果”。
+4. `成果证据`：只写效果良好时，练结果证据和可辩护表述。
+5. `段落结构`：事实足够但表达散时，练摘要、理论段或总结的限时改写。
+6. `考场速度`：内容质量基本可用时，练 45-60 分钟限时成稿。
+
+## Minimal Acceptance Cases
+
+| 草稿情况 | 下一次练什么 |
+| --- | --- |
+| 题目要求 3 点，只覆盖 1 点 | 练题干覆盖表，补齐缺失义务 |
+| 段落里有很多技术词，但没有本人决策 | 练项目事实卡和主题决策链 |
+| 结构完整但成果空泛 | 练结果证据改写，给可观察变化或验收反馈 |
