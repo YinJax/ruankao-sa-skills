@@ -4,10 +4,10 @@
   <desc id="rk-skills-desc">图示展示 rk-basic、rk-case、rk-essay-template、rk-essay 四个命令如何按基础补齐、案例训练、模板生成和论文诊断的顺序组成备考流程。</desc>
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap');
-      .title { font-family: "Instrument Serif", Georgia, "Times New Roman", serif; }
+      @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap');
+      .title { font-family: "Geist", -apple-system, "system-ui", "Segoe UI", "Microsoft YaHei", sans-serif; }
       .sans { font-family: "Geist", -apple-system, "system-ui", "Segoe UI", "Microsoft YaHei", sans-serif; }
-      .mono { font-family: "Geist Mono", "SFMono-Regular", Consolas, "Microsoft YaHei", monospace; }
+      .mono { font-family: "Geist", -apple-system, "system-ui", "Segoe UI", "Microsoft YaHei", sans-serif; }
     </style>
     <marker id="rk-skills-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/>
@@ -18,48 +18,49 @@
   </defs>
 
   <rect width="1120" height="360" fill="#f5f5f5"/>
-  <text x="48" y="48" class="title" fill="#2d3142" font-size="32" font-weight="400">Ruankao SA Command Map</text>
-  <text x="48" y="80" class="mono" fill="#4f5d75" font-size="16" letter-spacing=".08em">FOUNDATION · CASE · TEMPLATE · ESSAY REVIEW</text>
+  <rect x="48" y="28" width="8" height="56" rx="4" fill="#eb6c36"/>
+  <text x="72" y="48" class="title" fill="#2d3142" font-size="32" font-weight="600">Ruankao SA Command Map</text>
+  <text x="72" y="80" class="mono" fill="#4f5d75" font-size="16" font-weight="500" letter-spacing=".04em">FOUNDATION · CASE · TEMPLATE · ESSAY REVIEW</text>
 
   <line x1="280" y1="172" x2="320" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
   <line x1="552" y1="172" x2="592" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
   <line x1="824" y1="172" x2="864" y2="172" stroke="#eb6c36" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow-accent)"/>
 
   <rect x="48" y="108" width="232" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="48" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <rect x="48" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
   <rect x="64" y="124" width="56" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="92" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle">BASIC</text>
+  <text x="92" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">BASIC</text>
   <text x="164" y="164" class="sans" fill="#2d3142" font-size="20" font-weight="600" text-anchor="middle">/rk-basic</text>
   <text x="164" y="192" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">补知识点与计算题</text>
   <text x="164" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">框架 · 步骤 · 速记</text>
 
   <rect x="320" y="108" width="232" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="320" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <rect x="320" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
   <rect x="336" y="124" width="52" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="362" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle">CASE</text>
+  <text x="362" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">CASE</text>
   <text x="436" y="164" class="sans" fill="#2d3142" font-size="20" font-weight="600" text-anchor="middle">/rk-case</text>
   <text x="436" y="192" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">拆题干与采分点</text>
   <text x="436" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">线索 · 考点 · 诊断</text>
 
   <rect x="592" y="108" width="232" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="592" y="108" width="232" height="128" rx="8" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1.2"/>
+  <rect x="592" y="108" width="232" height="128" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.2"/>
   <rect x="608" y="124" width="80" height="20" rx="2" fill="rgba(235,108,54,0.16)" stroke="rgba(235,108,54,0.48)" stroke-width=".8"/>
-  <text x="648" y="138" class="mono" fill="#eb6c36" font-size="8" font-weight="600" text-anchor="middle">TEMPLATE</text>
+  <text x="648" y="138" class="mono" fill="#eb6c36" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">TEMPLATE</text>
   <text x="708" y="164" class="sans" fill="#2d3142" font-size="20" font-weight="600" text-anchor="middle">/rk-essay-template</text>
   <text x="708" y="192" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">把项目事实变成母版</text>
   <text x="708" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">拆题 · 适配 · 替换位</text>
 
   <rect x="864" y="108" width="232" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="864" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <rect x="864" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
   <rect x="880" y="124" width="56" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="908" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle">ESSAY</text>
+  <text x="908" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">ESSAY</text>
   <text x="980" y="164" class="sans" fill="#2d3142" font-size="20" font-weight="600" text-anchor="middle">/rk-essay</text>
   <text x="980" y="192" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">诊断已有论文草稿</text>
   <text x="980" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">覆盖 · 风险 · 修改</text>
 
   <line x1="48" y1="272" x2="1096" y2="272" stroke="rgba(45,49,66,0.12)" stroke-width=".8"/>
-  <text x="48" y="300" class="mono" fill="#7a8399" font-size="8" letter-spacing=".12em">HOW TO USE</text>
+  <text x="48" y="300" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">HOW TO USE</text>
   <text x="144" y="300" class="sans" fill="#4f5d75" font-size="16">先补知识和案例，再用真实项目生成可替换论文母版，最后拿草稿做题干覆盖和过线风险诊断。</text>
-  <text x="48" y="332" class="mono" fill="#7a8399" font-size="8" letter-spacing=".12em">BOUNDARY</text>
+  <text x="48" y="332" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">BOUNDARY</text>
   <text x="144" y="332" class="sans" fill="#4f5d75" font-size="16">模板用于考场改写和复盘，不承诺官方分数，也不补造项目事实。</text>
 </svg>
