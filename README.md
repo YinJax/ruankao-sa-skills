@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | `/rk-basic` | 选择题知识点看不懂、计算题不会拆步骤、易混概念记不牢 | 考点解释、计算步骤、知识框架、考前速记 |
 | `/rk-case` | 案例题题干抓不住、答案不知道漏了哪些采分点 | 题干线索、考点定位、分问答题框架、失分诊断 |
-| `/rk-essay-template` | 有真实项目材料，想按不同论文题目整理一份考场可改写母版 | 题目拆解、真题映射、主题适配、事实补强、可替换论文模板 |
+| `/rk-essay-template` | 有真实项目材料，想按不同论文题目整理一份考场可改写母版 | 题目拆解、真题映射、主题适配、架构师视角检查、论点卡、可替换论文模板 |
 | `/rk-essay` | 已经写出论文草稿，但不知道是否覆盖题干、哪里容易失分 | 题目覆盖诊断、项目事实检查、训练估分、优先修改项 |
 
 推荐节奏：先用 `rk-basic` 补知识点，再用 `rk-case` 训练分问作答，接着用 `rk-essay-template` 把真实项目整理成可替换母版，最后用 `rk-essay` 检查草稿的题干覆盖和过线风险。
@@ -39,6 +39,8 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --sk
 npx skills@latest add YinJax/ruankao-sa-skills -a codex -g -y
 ```
 
+已经安装过的用户，直接重新执行上面的安装命令即可更新到最新版本。更新后新开一个任务，让客户端重新加载 Skill。
+
 ## Install
 
 ### Recommended: `npx skills`
@@ -50,6 +52,22 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --sk
 ```
 
 把 `codex` 换成你的目标 Agent，例如 `claude-code`、`cursor` 或其它 `skills` CLI 支持的 Agent。
+
+### Update Existing Install
+
+已经用 `npx skills` 安装过时，重新执行同一条 `add` 命令即可覆盖为仓库最新版本：
+
+```bash
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-case --skill rk-essay --skill rk-essay-template -y
+```
+
+只更新论文模板命令：
+
+```bash
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-essay-template -y
+```
+
+更新后关闭当前任务并新开一个任务，确保客户端重新加载最新的 `SKILL.md`。
 
 ### Codex Plugin
 
@@ -86,7 +104,7 @@ codex plugin add rk@rk
 先生成论文母版：
 
 ```text
-/rk-essay-template 根据论文题目、真题要求和我的项目事实，生成一份可替换的考场写作模板；范文只用于提取结构和论点。
+/rk-essay-template 根据论文题目、真题要求和我的项目事实，生成一份可替换的考场写作模板；理论部分用论点卡展开，并检查是否站在架构师视角。
 ```
 
 诊断论文草稿：
