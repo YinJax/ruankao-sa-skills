@@ -1,7 +1,7 @@
 {
   "name": "rk",
   "version": "1.0.0",
-  "description": "软考系统架构设计师基础知识、案例分析和论文训练 Skills。",
+  "description": "软考系统架构设计师基础知识、专业英语、案例分析和论文训练 Skills。",
   "author": {
     "name": "Jax",
     "url": "https://github.com/YinJax"
@@ -13,14 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "RK Coach",
-    "shortDescription": "软考系统架构设计师基础、案例与论文训练",
-    "longDescription": "RK Coach 提供四个独立 Skill：rk-basic 解释基础知识和计算题，rk-case 训练案例分析，rk-essay 诊断和修改论文，rk-essay-template 生成可替换论文模板。",
+    "shortDescription": "软考系统架构设计师基础、英语、案例与论文训练",
+    "longDescription": "RK Coach 提供五个独立 Skill：rk-basic 解释基础知识和计算题，rk-english 复习专业英语高频词，rk-case 训练案例分析，rk-essay 诊断和修改论文，rk-essay-template 生成可替换论文模板。",
     "developerName": "Jax",
     "category": "Productivity",
     "capabilities": ["Interactive"],
     "websiteURL": "https://github.com/YinJax/ruankao-sa-skills",
     "defaultPrompt": [
       "Use $rk-basic to explain this exam topic",
+      "Use $rk-english to review professional English terms",
       "Use $rk-case to review this case answer",
       "Use $rk-essay to diagnose this essay",
       "Use $rk-essay-template to build a paper template"

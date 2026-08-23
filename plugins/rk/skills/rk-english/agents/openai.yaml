@@ -1,0 +1,5 @@
+interface:
+  display_name: "rk-english"
+  short_description: "Professional English terms and exam-style sentences."
+  default_prompt: "Use $rk-english to review high-frequency professional English terms."
+
