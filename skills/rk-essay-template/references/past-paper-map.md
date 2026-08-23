@@ -4,6 +4,19 @@ Use this reference when the user asks to adapt a project template to历年真题
 
 The entries are non-official recalled topics collected from public question banks and community notes. Treat them as training material, not official wording. When the user provides an exact prompt, the user's prompt overrides this map.
 
+## 四方向覆盖
+
+课堂材料可将论文训练归为四个方向：`架构分析与设计`、`系统分析与设计`、`软件测试分析与设计`、`数据存储分析与设计`。这只是选题和整理素材的训练框架，不是对当次命题范围的承诺。
+
+生成模板时，先为用户项目建立下表；只有“可用”的格子可以生成完整段落，其余只能保留替换位或补充访谈问题。
+
+| 方向 | 项目最低事实 | 常见可用论点 | 无事实时的处理 |
+| --- | --- | --- | --- |
+| 架构 | 系统边界、质量目标、方案取舍 | 架构风格、评估、演化、云原生、服务化 | 不把技术栈硬写成架构决策 |
+| 系统 | 模块职责、接口或开发过程事实 | 建模、设计方法、构件、集成、运维 | 不把普通开发流水账写成方法论 |
+| 测试 | 质量目标、测试动作、缺陷或性能验证 | 测试策略、自动化、缺陷闭环、性能测试 | 不把开发自测当完整测试体系 |
+| 数据存储 | 数据源、模型、同步或质量校验事实 | 数据集成、存储选型、批流处理、治理 | 不只列数据库表或产品名称 |
+
 ## 近年主题索引
 
 | 年份场次 | 论文题目方向 | 归类 | 模板替换重点 |
@@ -40,11 +53,11 @@ The entries are non-official recalled topics collected from public question bank
 
 ## 生成模板时的用法
 
-1. 先按题干关键词匹配 `归类`，再读取 `exam-topic-catalog.md` 选择 3 个论点模块。
+1. 先按题干关键词匹配 `归类`，再完成“四方向覆盖”检查，读取 `exam-topic-catalog.md` 选择 3 个论点模块。
 2. 用 `模板替换重点` 检查用户项目是否有真实场景。
 3. 如果项目没有对应事实，只输出骨架和补充访谈问题。
 4. 若同一项目可支撑多个方向，输出“主模板 + 方向替换卡”。
-5. 不要把本表中的题目当成官方完整题干；用户给出真题全文时必须重新拆题。
+5. 不要把本表中的题目当成官方完整题干；用户给出真题全文时必须重新拆题，并以题干覆盖优先于本表分类。
 
 ## 方向替换卡示例
 
