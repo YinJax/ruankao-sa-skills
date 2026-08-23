@@ -26,6 +26,7 @@ Produce a credible, topic-aligned, pass-oriented essay. Treat the bundled sample
 8. Load [essay-sample-patterns.md](references/essay-sample-patterns.md) when diagnosing whether the draft has exam-like structure without copying sample wording.
 9. Load [instructional-corpus.md](references/instructional-corpus.md) when using the converted Markdown books as knowledge samples for topic coverage, structure, or risk detection.
 10. Load [sample-calibration.md](references/sample-calibration.md) only when explaining corpus-based structural patterns.
+11. Load [theory-accuracy-check.md](references/theory-accuracy-check.md) when the draft contains theory sections, definitions, method comparisons, or named architecture concepts.
 
 ## Score Language
 
@@ -44,12 +45,13 @@ When comparing with a pass line, load [official-boundaries.md](references/offici
 2. `题目覆盖表`：题干要求、证据位置、状态、修复动作。
 3. `硬风险`：逐项列出命中或明确写“未发现”。
 4. `分维度诊断`：按 [rubric.md](references/rubric.md) 给出判断与证据。
-5. `优先修改清单`：最多五项，按过线影响排序，每项给出可执行动作。
-6. `事实与素材补强`：在事实薄弱、成果空泛或用户要求构思时输出事实访谈问题、事实卡缺口、主题素材库和矛盾检查。
-7. `下一次练什么`：给出 1-3 项下一轮练习任务，每项说明目标、输入材料、限时要求和验收标准；优先选择最影响过线的缺口。
-8. `改写示例或提纲`：只改薄弱段落，或给出可替换骨架；不虚构项目数据。
-9. `考场模板`：仅在用户要求时输出，并标出必须按题干替换的部分。
+5. `理论准确性检查`：检查定义、分类、方法步骤、对比维度、适用边界和项目承接。
+6. `优先修改清单`：最多五项，按过线影响排序，每项给出可执行动作。
+7. `事实与素材补强`：在事实薄弱、成果空泛或用户要求构思时输出事实访谈问题、事实卡缺口、主题素材库和矛盾检查。
+8. `下一次练什么`：给出 1-3 项下一轮练习任务，每项说明目标、输入材料、限时要求和验收标准；优先选择最影响过线的缺口。
+9. `改写示例或提纲`：只改薄弱段落，或给出可替换骨架；不虚构项目数据。
+10. `考场模板`：仅在用户要求时输出，并标出必须按题干替换的部分。
 
 ## Completion Criteria
 
-Finish only when every prompt obligation is mapped; each score range has evidence, uncertainty, and calibration status; hard risks are checked; revision actions are concrete; every project claim is user-supplied or marked `[待本人确认]`; and the next-practice task is specific enough for the user to act on.
+Finish only when every prompt obligation is mapped; each score range has evidence, uncertainty, and calibration status; hard risks and theory accuracy are checked; revision actions are concrete; every project claim is user-supplied or marked `[待本人确认]`; and the next-practice task is specific enough for the user to act on.

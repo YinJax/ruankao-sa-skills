@@ -23,6 +23,7 @@ description: "$rk-essay-template - 用于根据软考论文题目和用户项目
 - 需要把题目要求转成模板流程时，读取 [template-workflow.md](references/template-workflow.md)。
 - 需要判断某个项目是否能支撑某个题目时，读取 [topic-fit.md](references/topic-fit.md)。
 - 需要根据论文范文分类或历年真题选择论点模块时，读取 [exam-topic-catalog.md](references/exam-topic-catalog.md)。
+- 需要为架构评估、数据访问层、云原生、SOA/微服务、安全架构、大数据架构等方向生成专题论点时，读取 [topic-argument-cards.md](references/topic-argument-cards.md)。
 - 需要把论文题干转成必须回应的写作义务时，读取 [prompt-obligation-patterns.md](references/prompt-obligation-patterns.md)。
 - 需要借鉴范文或模板资料时，读取 [essay-sample-patterns.md](references/essay-sample-patterns.md)，只吸收结构，不复写原文。
 - 需要参考近年论文真题的命题分布和替换方向时，读取 [past-paper-map.md](references/past-paper-map.md)。
@@ -100,6 +101,7 @@ description: "$rk-essay-template - 用于根据软考论文题目和用户项目
 - 用户未提供角色时，默认角色为“系统架构师/架构负责人”；但具体主导动作、决策边界和职责范围仍需标 `[待本人确认]`
 - 把可替换位写成明确占位符
 - 题目相关理论至少拆成 3 个可展开模块，每个模块都给出项目落点
+- 优先从专题论点卡选择 3 个能被用户项目事实支撑的论点，不把所有专题都塞进同一篇
 - 不写空泛口号，不把教材定义当论文正文
 - 题目不匹配时，直接提示不建议套用
 - 理论部分用 `论点卡` 展开，不只写教材定义；每张卡必须包含概念边界、分类或原则、项目落点、架构师动作、权衡和结果验证
