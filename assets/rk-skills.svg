@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100%" viewBox="0 0 1600 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rk-skills-title rk-skills-desc">
-  <title id="rk-skills-title">软考系统架构设计师六个命令</title>
-  <desc id="rk-skills-desc">图示展示 rk-basic、rk-english、rk-case、rk-essay-template、rk-essay-final、rk-essay 六个命令如何按基础补齐、英语速记、案例训练、模板生成、考前押题和论文诊断的顺序组成备考流程。</desc>
+  <title id="rk-skills-title">软考系统架构设计师七个命令</title>
+  <desc id="rk-skills-desc">图示展示 rk-basic、rk-english、rk-case-card、rk-case-drill、rk-essay-template、rk-essay-final、rk-essay 七个命令如何按基础补齐、英语速记、案例背诵、案例训练、模板生成、考前押题和论文诊断的顺序组成备考流程。</desc>
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap');
@@ -20,7 +20,7 @@
   <rect width="1600" height="360" fill="#f5f5f5"/>
   <rect x="48" y="28" width="8" height="56" rx="4" fill="#eb6c36"/>
   <text x="72" y="48" class="title" fill="#2d3142" font-size="32" font-weight="600">Ruankao SA Command Map</text>
-  <text x="72" y="80" class="mono" fill="#4f5d75" font-size="16" font-weight="500" letter-spacing=".04em">FOUNDATION · ENGLISH · CASE · TEMPLATE · PRE-EXAM · ESSAY REVIEW</text>
+  <text x="72" y="80" class="mono" fill="#4f5d75" font-size="16" font-weight="500" letter-spacing=".04em">FOUNDATION · ENGLISH · CASE CARD/DRILL · TEMPLATE · PRE-EXAM · ESSAY REVIEW</text>
 
   <line x1="280" y1="172" x2="304" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
   <line x1="536" y1="172" x2="560" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
@@ -48,9 +48,9 @@
   <rect x="560" y="108" width="232" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
   <rect x="576" y="124" width="52" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
   <text x="602" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">CASE</text>
-  <text x="676" y="164" class="sans" fill="#2d3142" font-size="20" font-weight="600" text-anchor="middle">/rk-case</text>
-  <text x="676" y="192" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">拆题干与采分点</text>
-  <text x="676" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">线索 · 考点 · 诊断</text>
+  <text x="676" y="158" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-case-card</text>
+  <text x="676" y="182" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-case-drill</text>
+  <text x="676" y="208" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">背专题与练真题</text>
 
   <rect x="816" y="108" width="232" height="128" rx="8" fill="#f5f5f5"/>
   <rect x="816" y="108" width="232" height="128" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.2"/>
@@ -78,7 +78,7 @@
 
   <line x1="48" y1="272" x2="1560" y2="272" stroke="rgba(45,49,66,0.12)" stroke-width=".8"/>
   <text x="48" y="300" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">HOW TO USE</text>
-  <text x="144" y="300" class="sans" fill="#4f5d75" font-size="16">先补知识和英语，再练案例，用真实项目生成论文母版，考前按押题生成论点卡，最后拿草稿做诊断。</text>
+  <text x="144" y="300" class="sans" fill="#4f5d75" font-size="16">先补知识和英语，再用案例卡背专题、用案例训练拆真题，用真实项目生成论文母版，考前按押题生成论点卡。</text>
   <text x="48" y="332" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">BOUNDARY</text>
   <text x="144" y="332" class="sans" fill="#4f5d75" font-size="16">专业英语用于快速识别高频词；论文模板用于考场改写和复盘，不承诺官方分数，也不补造项目事实。</text>
 </svg>

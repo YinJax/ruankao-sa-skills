@@ -1,7 +1,7 @@
 {
   "name": "rk",
   "version": "1.0.0",
-  "description": "软考系统架构设计师基础知识、专业英语、案例分析和论文训练 Skills。",
+  "description": "软考系统架构设计师基础知识、专业英语、案例必背卡、案例真题训练和论文训练 Skills。",
   "author": {
     "name": "Jax",
     "url": "https://github.com/YinJax"
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "RK Coach",
     "shortDescription": "软考系统架构设计师基础、英语、案例与论文训练",
-    "longDescription": "RK Coach 提供六个独立 Skill：rk-basic 解释基础知识和计算题，rk-english 复习专业英语高频词，rk-case 训练案例分析，rk-essay-template 生成可替换论文模板，rk-essay-final 考前按押题主题生成论点卡，rk-essay 诊断和修改论文。",
+    "longDescription": "RK Coach 提供七个独立 Skill：rk-basic 解释基础知识和计算题，rk-english 复习专业英语高频词，rk-case-card 生成案例必背知识卡，rk-case-drill 训练具体案例题，rk-essay-template 生成可替换论文模板，rk-essay-final 考前按押题主题生成论点卡，rk-essay 诊断和修改论文。",
     "developerName": "Jax",
     "category": "Productivity",
     "capabilities": ["Interactive"],
@@ -22,7 +22,8 @@
     "defaultPrompt": [
       "Use $rk-basic to explain this exam topic",
       "Use $rk-english to review professional English terms",
-      "Use $rk-case to review this case answer",
+      "Use $rk-case-card to review must-memorize case topics",
+      "Use $rk-case-drill to review this case answer",
       "Use $rk-essay to diagnose this essay",
       "Use $rk-essay-template to build a paper template",
       "Use $rk-essay-final to generate pre-exam essay topic cards"

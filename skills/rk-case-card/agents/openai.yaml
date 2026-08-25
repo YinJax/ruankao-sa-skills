@@ -1,0 +1,4 @@
+interface:
+  display_name: "rk-case-card"
+  short_description: "Must-memorize case topic cards."
+  default_prompt: "Use $rk-case-card to review must-memorize case topics."

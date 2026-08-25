@@ -1,4 +1,0 @@
-interface:
-  display_name: "rk-case"
-  short_description: "Case prompt breakdown and answer scoring."
-  default_prompt: "Use $rk-case to break down this case and score the answer."

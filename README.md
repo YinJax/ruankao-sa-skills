@@ -1,11 +1,11 @@
 # 软考系统架构设计师 Skills
 
-把软考高级系统架构设计师备考拆成六个可调用的 AI 教练：基础知识、专业英语、案例分析、论文模板生成、论文考前押题材料、论文草稿诊断。
+把软考高级系统架构设计师备考拆成七个可调用的 AI 教练：基础知识、专业英语、案例必背卡、案例真题训练、论文模板生成、论文考前押题材料、论文草稿诊断。
 
-`ruankao-sa-skills` 适合在复习知识点、记专业英语、拆案例题、整理项目素材、生成论文母版、考前押题生成论点卡和打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
+`ruankao-sa-skills` 适合在复习知识点、记专业英语、背案例专题、拆案例题、整理项目素材、生成论文母版、考前押题生成论点卡和打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
 <div align="center">
-  <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师六个命令：/rk-basic、/rk-english、/rk-case、/rk-essay-template、/rk-essay-final、/rk-essay" />
+  <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师七个命令：/rk-basic、/rk-english、/rk-case-card、/rk-case-drill、/rk-essay-template、/rk-essay-final、/rk-essay" />
 </div>
 
 ## What You Get
@@ -14,25 +14,26 @@
 | --- | --- | --- |
 | `/rk-basic` | 选择题知识点看不懂、计算题不会拆步骤、易混概念记不牢 | 考点解释、计算步骤、知识框架、考前速记 |
 | `/rk-english` | 专业英语 5 道题想快速记高频词，不想看太长解析 | 按专题分类的英语词汇、中文含义、真题或考点例句中文意思 |
-| `/rk-case` | 案例题题干抓不住、答案不知道漏了哪些采分点 | 题干线索、考点定位、分问答题框架、失分诊断 |
+| `/rk-case-card` | 想先背案例题基础必备知识，固定查看必答题稳分和选做题高频专题 | 专题地图、题干关键词、必背概念、得分句式、易丢分点 |
+| `/rk-case-drill` | 具体案例题题干抓不住、答案不知道漏了哪些采分点 | 题干线索、考点定位、分问答题框架、失分诊断 |
 | `/rk-essay-template` | 有真实项目材料，想按不同论文题目整理一份考场可改写母版 | 题目拆解、真题映射、主题适配、架构师视角检查、论点卡、可替换论文模板 |
 | `/rk-essay-final` | 考前遇到押题主题，想基于固定项目快速生成可背论点卡 | 适配判断、题干义务、3 张论点卡、项目素材、背诵句、跑题提醒 |
 | `/rk-essay` | 已经写出论文草稿，但不知道是否覆盖题干、哪里容易失分 | 题目覆盖诊断、项目事实检查、训练估分、优先修改项 |
 
-推荐节奏：先用 `rk-basic` 补知识点，用 `rk-english` 记高频专业英语，再用 `rk-case` 训练分问作答，接着用 `rk-essay-template` 把真实项目整理成可替换母版，考前用 `rk-essay-final` 按押题主题生成论点卡，最后用 `rk-essay` 检查草稿的题干覆盖和过线风险。
+推荐节奏：先用 `rk-basic` 补知识点，用 `rk-english` 记高频专业英语，再用 `rk-case-card` 背案例必备专题，用 `rk-case-drill` 训练分问作答，接着用 `rk-essay-template` 把真实项目整理成可替换母版，考前用 `rk-essay-final` 按押题主题生成论点卡，最后用 `rk-essay` 检查草稿的题干覆盖和过线风险。
 
 ## Quick Start
 
 推荐用 `npx skills` 安装，适合 Codex、Claude Code、Cursor 等支持 `SKILL.md` 的 Agent：
 
 ```bash
-npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case-card --skill rk-case-drill --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
 ```
 
 安装后新开一个任务，让客户端重新加载 Skill，然后直接调用：
 
 ```text
-/rk-case 拆解下面这道案例题，指出我的答案漏了哪些采分点。
+/rk-case-drill 拆解下面这道案例题，指出我的答案漏了哪些采分点。
 ```
 
 如果你的 `skills` CLI 会自动发现仓库根目录下的 `skills/`，也可以使用更短的安装命令：
@@ -47,10 +48,10 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g -y
 
 ### Recommended: `npx skills`
 
-安装指定的六个 Skill：
+安装指定的七个 Skill：
 
 ```bash
-npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case-card --skill rk-case-drill --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
 ```
 
 把 `codex` 换成你的目标 Agent，例如 `claude-code`、`cursor` 或其它 `skills` CLI 支持的 Agent。
@@ -60,7 +61,7 @@ npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --sk
 已经用 `npx skills` 安装过时，重新执行同一条 `add` 命令即可覆盖为仓库最新版本：
 
 ```bash
-npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
+npx skills@latest add YinJax/ruankao-sa-skills -a codex -g --skill rk-basic --skill rk-english --skill rk-case-card --skill rk-case-drill --skill rk-essay --skill rk-essay-template --skill rk-essay-final -y
 ```
 
 只更新论文模板命令：
@@ -103,10 +104,16 @@ codex plugin add rk@rk
 /rk-english 输出“安全”专题的 10 个高频词，只列英语词汇、中文和例句中文意思。
 ```
 
-拆案例题：
+背案例必备专题：
 
 ```text
-/rk-case 题干如下，帮我提取关键线索、定位考点，并检查我的答案漏了哪些采分点。
+/rk-case-card 输出案例分析必答题稳分和选做题高频专题，并给每个专题一条得分句式。
+```
+
+练具体案例题：
+
+```text
+/rk-case-drill 题干如下，帮我提取关键线索、定位考点，并检查我的答案漏了哪些采分点。
 ```
 
 先生成论文母版：
@@ -130,7 +137,7 @@ codex plugin add rk@rk
 串联复习：
 
 ```text
-先用 /rk-basic 帮我补齐 Redis 缓存一致性的基础知识，再用 /rk-case 帮我整理案例题答题框架。
+先用 /rk-basic 帮我补齐 Redis 缓存一致性的基础知识，再用 /rk-case-card 背案例专题卡，再用 /rk-case-drill 拆真题。
 ```
 
 ## Boundaries
@@ -139,7 +146,7 @@ codex plugin add rk@rk
 
 Skill 不会虚构题干、项目数据、技术栈、评分细则或官方政策。报名时间、考试安排、大纲和地区政策等信息，请以当次官方通知为准。
 
-生成内容适合用来复习、诊断和考场前改写。`rk-essay-template` 输出的是可替换母版，不是万能范文；`rk-essay-final` 输出的是考前论点卡和素材，不是完整定稿；`rk-essay` 给出的训练估分和修改建议也不能替代官方阅卷。
+生成内容适合用来复习、诊断和考场前改写。`rk-case-card` 输出的是背诵卡，不是官方押题；`rk-case-drill` 给出的训练估分和修改建议不能替代官方阅卷；`rk-essay-template` 输出的是可替换母版，不是万能范文；`rk-essay-final` 输出的是考前论点卡和素材，不是完整定稿；`rk-essay` 给出的训练估分和修改建议也不能替代官方阅卷。
 
 ## For Maintainers
 
@@ -170,7 +177,8 @@ ruankao-sa-skills/
 ├── skills/
 │   ├── rk-basic/
 │   ├── rk-english/
-│   ├── rk-case/
+│   ├── rk-case-card/
+│   ├── rk-case-drill/
 │   ├── rk-essay/
 │   ├── rk-essay-final/
 │   └── rk-essay-template/
@@ -180,7 +188,8 @@ ruankao-sa-skills/
 │   └── skills/
 │       ├── rk-basic/
 │       ├── rk-english/
-│       ├── rk-case/
+│       ├── rk-case-card/
+│       ├── rk-case-drill/
 │       ├── rk-essay/
 │       ├── rk-essay-final/
 │       └── rk-essay-template/

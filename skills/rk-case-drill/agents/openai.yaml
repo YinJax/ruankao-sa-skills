@@ -1,0 +1,4 @@
+interface:
+  display_name: "rk-case-drill"
+  short_description: "Case prompt breakdown and answer scoring."
+  default_prompt: "Use $rk-case-drill to break down this case and score the answer."

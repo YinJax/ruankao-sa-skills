@@ -1,15 +1,15 @@
 ---
-name: rk-case
-description: "Case analysis coach for the Advanced System Architect exam: prompt clue breakdown, topic identification, answer frameworks, answer diagnosis, practice scoring, response templates, and topic notes."
+name: rk-case-drill
+description: "Case drill coach for the Advanced System Architect exam: concrete past-paper breakdown, prompt clue extraction, answer frameworks, answer diagnosis, practice scoring, and rewrite suggestions."
 ---
 
-# 软考系统架构师案例分析助手 Skill
+# 软考系统架构师案例题训练助手 Skill
 
-这个 Skill 用于训练软考高级系统架构设计师「案例分析」科目。目标是把题干线索转成可得分答案，而不是背诵长篇资料。
+这个 Skill 用于训练软考高级系统架构设计师「案例分析」具体题目。目标是把一道题的题干线索转成可得分答案，并诊断用户答案的丢分点。
 
 ## 工作流
 
-1. 先判断用户任务类型：题干拆解、题型选择策略、答案诊断、模拟评分、专题复习、考前速记、错题复盘。
+1. 先判断用户任务类型：题干拆解、题型选择策略、答案诊断、模拟评分、同类题变式、错题复盘。
 2. 提取题干中的业务场景、约束、故障现象、质量属性、技术栈、问题序号和分值线索。
 3. 按「题型判断 -> 题干证据 -> 评分点套路 -> 答案要点 -> 落地措施 -> 风险权衡」组织回答。
 4. 对用户草稿评分时，给出非官方训练分、置信度、主要丢分原因和可直接替换的改写建议。
@@ -19,8 +19,8 @@ description: "Case analysis coach for the Advanced System Architect exam: prompt
 
 - 处理完整案例题、题型选择策略或答题顺序时，读取 [case-workflow.md](references/case-workflow.md)。
 - 给答案草稿评分、诊断、改进时，读取 [scoring-diagnosis.md](references/scoring-diagnosis.md)。
-- 需要分专题答题模板时，读取 [topic-patterns.md](references/topic-patterns.md)。
-- 需要快速定位考点或生成复习清单时，读取 [topic-index.md](references/topic-index.md)。
+- 需要把具体题目映射到专题时，读取 [topic-index.md](references/topic-index.md)。
+- 需要给出分问答题模板时，读取 [topic-patterns.md](references/topic-patterns.md)。
 - 用户要模拟练习、同类题变式或出题套路时，读取 [case-bank.md](references/case-bank.md)。
 
 ## 默认输出
@@ -68,4 +68,5 @@ description: "Case analysis coach for the Advanced System Architect exam: prompt
 
 - 基础概念、选择题知识点交给同套件的 `rk-basic` Skill。
 - 论文结构、项目事实和论文评分交给同套件的 `rk-essay` Skill。
-- 本 Skill 只处理案例分析：短答案、分问作答、场景推理、要点诊断和案例专题训练。
+- 案例题基础必备知识卡交给 `rk-case-card` Skill。
+- 本 Skill 只处理具体案例题：短答案、分问作答、场景推理、要点诊断和同类题训练。
