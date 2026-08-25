@@ -5,8 +5,8 @@
 `ruankao-sa-skills` 适合在复习知识点、记专业英语、背案例专题、拆案例题、整理项目素材、生成论文母版、考前押题生成论点卡和打磨论文草稿时使用。每个 Skill 都有自己的工作流、参考资料和输出边界，可以单独调用，也可以按备考节奏串起来。
 
 <div align="center">
-  <img src="assets/rk-skills.svg" width="88%" alt="软考系统架构设计师七个命令流程图：先用 /rk-basic 补基础，用 /rk-english 记英语，用 /rk-case-card 背案例专题，用 /rk-case-drill 练具体真题，再进入 /rk-essay-template、/rk-essay-final 和 /rk-essay 的论文训练。" />
-  <p><sub>两行命令地图：/rk-case-card 负责背案例必备专题，/rk-case-drill 负责练具体案例题。</sub></p>
+  <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师七个命令流程图：先用 /rk-basic 补基础，用 /rk-english 记英语，用 /rk-case-card 背案例专题，用 /rk-case-drill 练具体真题，再进入 /rk-essay-template、/rk-essay-final 和 /rk-essay 的论文训练。" />
+  <p><sub>紧凑两行命令地图：/rk-case-card 负责背案例必备专题，/rk-case-drill 负责练具体案例题。</sub></p>
 </div>
 
 ## What You Get
