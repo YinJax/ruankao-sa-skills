@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100%" viewBox="0 0 1600 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rk-skills-title rk-skills-desc">
+<svg width="100%" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rk-skills-title rk-skills-desc">
   <title id="rk-skills-title">软考系统架构设计师七个命令</title>
-  <desc id="rk-skills-desc">展示七个软考系统架构设计师备考命令的顺序：基础知识、专业英语、案例必背卡、案例真题训练、论文模板、考前押题和论文诊断。</desc>
+  <desc id="rk-skills-desc">展示七个软考系统架构设计师备考命令的两行地图：基础知识、专业英语、案例必背卡、案例真题训练、论文模板、考前押题和论文诊断。</desc>
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap');
@@ -17,77 +17,76 @@
     </marker>
   </defs>
 
-  <rect width="1600" height="360" fill="#f5f5f5"/>
-  <rect x="48" y="28" width="8" height="56" rx="4" fill="#eb6c36"/>
-  <text x="72" y="48" class="title" fill="#2d3142" font-size="32" font-weight="600">Ruankao SA Command Map</text>
-  <text x="72" y="80" class="mono" fill="#4f5d75" font-size="16" font-weight="500" letter-spacing=".04em">FOUNDATION · ENGLISH · CASE CARD · CASE DRILL · TEMPLATE · PRE-EXAM · ESSAY REVIEW</text>
+  <rect width="1200" height="620" fill="#f5f5f5"/>
+  <rect x="48" y="36" width="8" height="64" rx="4" fill="#eb6c36"/>
+  <text x="72" y="60" class="title" fill="#2d3142" font-size="40" font-weight="600">Ruankao SA Command Map</text>
+  <text x="72" y="96" class="sans" fill="#4f5d75" font-size="20" font-weight="500">七个命令拆成两段：先补基础和案例，再进入论文训练。</text>
 
-  <line x1="244" y1="172" x2="264" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
-  <line x1="460" y1="172" x2="480" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
-  <line x1="676" y1="172" x2="696" y2="172" stroke="#eb6c36" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow-accent)"/>
-  <line x1="892" y1="172" x2="912" y2="172" stroke="#eb6c36" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow-accent)"/>
-  <line x1="1108" y1="172" x2="1128" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
-  <line x1="1324" y1="172" x2="1344" y2="172" stroke="#4f5d75" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#rk-skills-arrow)"/>
+  <text x="48" y="144" class="mono" fill="#7a8399" font-size="12" font-weight="600" letter-spacing=".12em">FOUNDATION + CASE</text>
+  <text x="160" y="368" class="mono" fill="#7a8399" font-size="12" font-weight="600" letter-spacing=".12em">ESSAY TRAINING</text>
 
-  <rect x="48" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="48" y="108" width="196" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
-  <rect x="64" y="124" width="56" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="92" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">BASIC</text>
-  <text x="146" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-basic</text>
-  <text x="146" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">补知识点与计算题</text>
-  <text x="146" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">框架 · 步骤 · 速记</text>
+  <line x1="300" y1="224" x2="332" y2="224" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#rk-skills-arrow)"/>
+  <line x1="584" y1="224" x2="616" y2="224" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#rk-skills-arrow)"/>
+  <line x1="868" y1="224" x2="900" y2="224" stroke="#eb6c36" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#rk-skills-arrow-accent)"/>
+  <line x1="412" y1="448" x2="476" y2="448" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#rk-skills-arrow)"/>
+  <line x1="728" y1="448" x2="788" y2="448" stroke="#4f5d75" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#rk-skills-arrow)"/>
 
-  <rect x="264" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="264" y="108" width="196" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
-  <rect x="280" y="124" width="64" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="312" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">ENGLISH</text>
-  <text x="362" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-english</text>
-  <text x="362" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">记专业英语高频词</text>
-  <text x="362" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">词义 · 例句 · 中文</text>
+  <rect x="48" y="164" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="48" y="164" width="252" height="148" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
+  <rect x="64" y="184" width="72" height="24" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <text x="100" y="200" class="mono" fill="#4f5d75" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">BASIC</text>
+  <text x="174" y="240" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-basic</text>
+  <text x="174" y="272" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">补知识点与计算题</text>
+  <text x="174" y="296" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">框架 · 步骤 · 速记</text>
 
-  <rect x="480" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="480" y="108" width="196" height="128" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.2"/>
-  <rect x="496" y="124" width="72" height="20" rx="2" fill="rgba(235,108,54,0.16)" stroke="rgba(235,108,54,0.48)" stroke-width=".8"/>
-  <text x="532" y="138" class="mono" fill="#eb6c36" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">CARD</text>
-  <text x="578" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-case-card</text>
-  <text x="578" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">背案例必备专题</text>
-  <text x="578" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">稳分 · 高频 · 句式</text>
+  <rect x="332" y="164" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="332" y="164" width="252" height="148" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
+  <rect x="348" y="184" width="84" height="24" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <text x="390" y="200" class="mono" fill="#4f5d75" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">ENGLISH</text>
+  <text x="458" y="240" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-english</text>
+  <text x="458" y="272" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">记专业英语高频词</text>
+  <text x="458" y="296" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">词义 · 例句 · 中文</text>
 
-  <rect x="696" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="696" y="108" width="196" height="128" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.2"/>
-  <rect x="712" y="124" width="72" height="20" rx="2" fill="rgba(235,108,54,0.16)" stroke="rgba(235,108,54,0.48)" stroke-width=".8"/>
-  <text x="748" y="138" class="mono" fill="#eb6c36" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">DRILL</text>
-  <text x="794" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-case-drill</text>
-  <text x="794" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">练具体案例真题</text>
-  <text x="794" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">线索 · 考点 · 诊断</text>
+  <rect x="616" y="164" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="616" y="164" width="252" height="148" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.6"/>
+  <rect x="632" y="184" width="72" height="24" rx="2" fill="rgba(235,108,54,0.16)" stroke="rgba(235,108,54,0.48)" stroke-width=".8"/>
+  <text x="668" y="200" class="mono" fill="#eb6c36" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">CARD</text>
+  <text x="742" y="240" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-case-card</text>
+  <text x="742" y="272" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">背案例必备专题</text>
+  <text x="742" y="296" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">稳分 · 高频 · 句式</text>
 
-  <rect x="912" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="912" y="108" width="196" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
-  <rect x="928" y="124" width="80" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="968" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">TEMPLATE</text>
-  <text x="1010" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-essay-template</text>
-  <text x="1010" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">把项目事实变母版</text>
-  <text x="1010" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">拆题 · 适配 · 替换位</text>
+  <rect x="900" y="164" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="900" y="164" width="252" height="148" rx="8" fill="rgba(235,108,54,0.10)" stroke="#eb6c36" stroke-width="1.6"/>
+  <rect x="916" y="184" width="72" height="24" rx="2" fill="rgba(235,108,54,0.16)" stroke="rgba(235,108,54,0.48)" stroke-width=".8"/>
+  <text x="952" y="200" class="mono" fill="#eb6c36" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">DRILL</text>
+  <text x="1026" y="240" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-case-drill</text>
+  <text x="1026" y="272" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">练具体案例真题</text>
+  <text x="1026" y="296" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">线索 · 考点 · 诊断</text>
 
-  <rect x="1128" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="1128" y="108" width="196" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
-  <rect x="1144" y="124" width="56" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="1172" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">FINAL</text>
-  <text x="1226" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-essay-final</text>
-  <text x="1226" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">考前押题论点卡</text>
-  <text x="1226" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">适配 · 背诵 · 风险</text>
+  <rect x="160" y="388" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="160" y="388" width="252" height="148" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
+  <rect x="176" y="408" width="92" height="24" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <text x="222" y="424" class="mono" fill="#4f5d75" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">TEMPLATE</text>
+  <text x="286" y="464" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-essay-template</text>
+  <text x="286" y="496" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">把项目事实变母版</text>
+  <text x="286" y="520" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">拆题 · 适配 · 替换位</text>
 
-  <rect x="1344" y="108" width="196" height="128" rx="8" fill="#f5f5f5"/>
-  <rect x="1344" y="108" width="196" height="128" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
-  <rect x="1360" y="124" width="56" height="20" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
-  <text x="1388" y="138" class="mono" fill="#4f5d75" font-size="8" font-weight="600" text-anchor="middle" letter-spacing=".04em">ESSAY</text>
-  <text x="1442" y="164" class="sans" fill="#2d3142" font-size="18" font-weight="600" text-anchor="middle">/rk-essay</text>
-  <text x="1442" y="192" class="sans" fill="#4f5d75" font-size="14" text-anchor="middle">诊断已有论文草稿</text>
-  <text x="1442" y="216" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">覆盖 · 风险 · 修改</text>
+  <rect x="476" y="388" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="476" y="388" width="252" height="148" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
+  <rect x="492" y="408" width="68" height="24" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <text x="526" y="424" class="mono" fill="#4f5d75" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">FINAL</text>
+  <text x="602" y="464" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-essay-final</text>
+  <text x="602" y="496" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">考前押题论点卡</text>
+  <text x="602" y="520" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">适配 · 背诵 · 风险</text>
 
-  <line x1="48" y1="272" x2="1540" y2="272" stroke="rgba(45,49,66,0.12)" stroke-width=".8"/>
-  <text x="48" y="300" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">HOW TO USE</text>
-  <text x="144" y="300" class="sans" fill="#4f5d75" font-size="16">先补知识和英语，再用 /rk-case-card 背专题，用 /rk-case-drill 练真题，最后进入论文模板、押题和诊断。</text>
-  <text x="48" y="332" class="mono" fill="#7a8399" font-size="8" font-weight="600" letter-spacing=".04em">BOUNDARY</text>
-  <text x="144" y="332" class="sans" fill="#4f5d75" font-size="16">案例卡只管背诵地图；案例训练只管具体题目拆解、答案诊断和模拟评分。</text>
+  <rect x="788" y="388" width="252" height="148" rx="8" fill="#f5f5f5"/>
+  <rect x="788" y="388" width="252" height="148" rx="8" fill="#ffffff" stroke="rgba(45,49,66,0.24)" stroke-width="1"/>
+  <rect x="804" y="408" width="68" height="24" rx="2" fill="rgba(45,49,66,0.06)" stroke="rgba(45,49,66,0.20)" stroke-width=".8"/>
+  <text x="838" y="424" class="mono" fill="#4f5d75" font-size="12" font-weight="600" text-anchor="middle" letter-spacing=".04em">ESSAY</text>
+  <text x="914" y="464" class="sans" fill="#2d3142" font-size="24" font-weight="600" text-anchor="middle">/rk-essay</text>
+  <text x="914" y="496" class="sans" fill="#4f5d75" font-size="16" text-anchor="middle">诊断已有论文草稿</text>
+  <text x="914" y="520" class="sans" fill="#7a8399" font-size="12" text-anchor="middle">覆盖 · 风险 · 修改</text>
+
+  <line x1="48" y1="568" x2="1152" y2="568" stroke="rgba(45,49,66,0.12)" stroke-width=".8"/>
+  <text x="48" y="596" class="sans" fill="#4f5d75" font-size="16">网页端按 1200px 两行阅读：/rk-case-card 负责背，/rk-case-drill 负责练，论文命令单独成组。</text>
 </svg>

@@ -6,7 +6,7 @@
 
 <div align="center">
   <img src="assets/rk-skills.svg" width="100%" alt="软考系统架构设计师七个命令流程图：先用 /rk-basic 补基础，用 /rk-english 记英语，用 /rk-case-card 背案例专题，用 /rk-case-drill 练具体真题，再进入 /rk-essay-template、/rk-essay-final 和 /rk-essay 的论文训练。" />
-  <p><sub>命令地图：/rk-case-card 负责背案例必备专题，/rk-case-drill 负责练具体案例题。</sub></p>
+  <p><sub>命令地图已放大为两行：/rk-case-card 负责背案例必备专题，/rk-case-drill 负责练具体案例题。</sub></p>
 </div>
 
 ## What You Get
