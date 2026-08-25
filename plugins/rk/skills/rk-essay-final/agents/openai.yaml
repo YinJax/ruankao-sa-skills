@@ -1,0 +1,4 @@
+interface:
+  display_name: "rk-essay-final"
+  short_description: "考前押题论文论点卡生成"
+  default_prompt: "Use $rk-essay-final to generate pre-exam essay topic cards."
