@@ -1,19 +1,36 @@
 ---
 name: rk-case-drill
-description: "Case drill coach for the Advanced System Architect exam: concrete past-paper breakdown, prompt clue extraction, answer frameworks, answer diagnosis, practice scoring, and rewrite suggestions."
+description: "Case drill coach for the Advanced System Architect exam: four-option menu for daily drills, new-topic practice, past-paper breakdown, answer scoring, and rewrite suggestions."
 ---
 
 # 软考系统架构师案例题训练助手 Skill
 
-这个 Skill 用于训练软考高级系统架构设计师「案例分析」具体题目。目标是把一道题的题干线索转成可得分答案，并诊断用户答案的丢分点。
+这个 Skill 用于训练软考高级系统架构设计师「案例分析」具体题目。目标是用 4 个入口完成「今日练、新题练、真题拆、估分改」，把题干线索转成可得分答案，并诊断用户答案的丢分点。
 
 ## 工作流
 
-1. 先判断用户任务类型：题干拆解、题型选择策略、答案诊断、模拟评分、同类题变式、错题复盘。
-2. 提取题干中的业务场景、约束、故障现象、质量属性、技术栈、问题序号和分值线索。
-3. 按「题型判断 -> 题干证据 -> 评分点套路 -> 答案要点 -> 落地措施 -> 风险权衡」组织回答。
-4. 对用户草稿评分时，给出非官方训练分、置信度、主要丢分原因和可直接替换的改写建议。
+1. 用户只输入 `/rk-case-drill` 时，只输出「案例训练」4 项菜单：`1 今日练`、`2 新题练`、`3 真题拆`、`4 估分改`。
+2. 支持用户用编号或关键词继续调用，例如 `/rk-case-drill 1`、`/rk-case-drill 新题练`、`/rk-case-drill 真题拆`。
+3. 提取题干中的业务场景、约束、故障现象、质量属性、技术栈、问题序号和分值线索。
+4. 对用户草稿评分时，给出非官方训练分、置信度、主要丢分原因、改写建议和 1 行错题记录。
 5. 对不确定、超纲或材料来源不稳定的内容，标注为「训练推断」，不要说成官方结论。
+
+## 默认菜单
+
+```text
+案例训练
+1. 今日练
+2. 新题练
+3. 真题拆
+4. 估分改
+```
+
+## 菜单行为
+
+- `今日练`：围绕当天背诵卡出 1 道短练；如果没有当天卡，默认从质量属性、高频缓存或新方向中选 1 个。
+- `新题练`：围绕 AI/物联网/云原生/数据库/安全等新颖场景生成训练题，并标注为「训练推断」。
+- `真题拆`：要求用户粘贴完整题干后，按问题序号拆线索、定位考点和答案骨架。
+- `估分改`：要求用户粘贴题干和答案后，给非官方训练估分、失分点、改写稿和错题记录。
 
 ## 何时读取参考资料
 
@@ -47,6 +64,7 @@ description: "Case drill coach for the Advanced System Architect exam: concrete 
 - `评分点套路`：判断用户缺的是定义、机制、题干证据、措施闭环还是权衡。
 - `改写稿`：保留用户事实，压缩为考场可写的分点答案。
 - `下一轮训练`：给 1-3 个最该补的专题或答题动作。
+- `错题记录`：给一行可贴到 `rk-case-card` 记录里的薄弱点。
 
 ## 答题原则
 
