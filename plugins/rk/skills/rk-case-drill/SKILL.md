@@ -1,11 +1,11 @@
 ---
 name: rk-case-drill
-description: "Case drill coach for the Advanced System Architect exam: four-option menu for daily drills, new-topic practice, past-paper breakdown, answer scoring, and rewrite suggestions."
+description: "Case drill coach for the Advanced System Architect exam: four-option menu for daily drills, new-topic practice, past-paper breakdown, answer scoring, transfer variants, layered hints, and rewrite suggestions."
 ---
 
 # 软考系统架构师案例题训练助手 Skill
 
-这个 Skill 用于训练软考高级系统架构设计师「案例分析」具体题目。目标是用 4 个入口完成「今日练、新题练、真题拆、估分改」，把题干线索转成可得分答案，并诊断用户答案的丢分点。
+这个 Skill 用于训练软考高级系统架构设计师「案例分析」具体题目。目标是用 4 个入口完成「今日练、新题练、真题拆、估分改」，把题干线索转成可得分答案，并诊断用户答案的丢分点。用户说「举一反三」「同类题」「再来一道」时，围绕当前薄弱点生成 1 道变式短练；用户说「不会」时，先给分层提示，除非用户明确要完整答案。
 
 ## 工作流
 
@@ -14,6 +14,7 @@ description: "Case drill coach for the Advanced System Architect exam: four-opti
 3. 提取题干中的业务场景、约束、故障现象、质量属性、技术栈、问题序号和分值线索。
 4. 对用户草稿评分时，给出非官方训练分、置信度、主要丢分原因、改写建议和 1 行错题记录。
 5. 对不确定、超纲或材料来源不稳定的内容，标注为「训练推断」，不要说成官方结论。
+6. 对同类题训练，优先改变一个变量：业务场景、约束条件、问题问法或故障现象，保留原题可迁移的答题套路。
 
 ## 默认菜单
 
@@ -31,6 +32,8 @@ description: "Case drill coach for the Advanced System Architect exam: four-opti
 - `新题练`：围绕 AI/物联网/云原生/数据库/安全等新颖场景生成训练题，并标注为「训练推断」。
 - `真题拆`：要求用户粘贴完整题干后，按问题序号拆线索、定位考点和答案骨架。
 - `估分改`：要求用户粘贴题干和答案后，给非官方训练估分、失分点、改写稿和错题记录。
+- `举一反三`：从当前题、刚暴露的薄弱点或用户指定专题出 1 道变式短练；先让用户作答，再给评分点和对照讲解。
+- `提示`：用户卡住时按「线索提示 → 答题骨架 → 完整答案」推进，不一上来泄露全部答案。
 
 ## 何时读取参考资料
 
@@ -66,6 +69,21 @@ description: "Case drill coach for the Advanced System Architect exam: four-opti
 - `下一轮训练`：给 1-3 个最该补的专题或答题动作。
 - `错题记录`：给一行可贴到 `rk-case-card` 记录里的薄弱点。
 
+### 举一反三短练
+
+```text
+原题抓手：
+本次只改变：
+变式题：
+你先写：
+提示 1：
+提示 2：
+评分点：
+对照讲解：
+```
+
+在用户作答前，只输出到 `你先写`，最多追加 `提示 1`。用户继续说不会时再给 `提示 2`，用户答完或要求答案时再给评分点和对照讲解。
+
 ## 答题原则
 
 - 先答问题，再补概念。案例分析按点给分，定义只在题目问「说明」「原理」时展开。
@@ -73,6 +91,7 @@ description: "Case drill coach for the Advanced System Architect exam: four-opti
 - 技术名词要服务于方案：写清使用场景、解决的问题、代价和替代方案。
 - 不把训练材料中的趋势判断写成官方必考规则；官方考试范围、题型和合格线以当次考试通知为准。
 - 不虚构题干没有给出的技术栈、业务指标、版本号、分值细则和官方评分标准。
+- 变式题、短练题、训练推断题都要清楚标注，不冒充真题。
 
 ## 分数口径
 

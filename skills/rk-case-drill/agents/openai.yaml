@@ -1,4 +1,4 @@
 interface:
   display_name: "rk-case-drill"
-  short_description: "Case prompt breakdown and answer scoring."
-  default_prompt: "Use $rk-case-drill to break down this case and score the answer."
+  short_description: "Case breakdown, scoring, hints, and transfer drills."
+  default_prompt: "Use $rk-case-drill to turn this case into a hinted transfer drill and score my answer."
